@@ -5,10 +5,12 @@
 #### 第一節 正式環境建置
     1. 安裝與使用虚擬機軟體
        1. 下載 VirtualBox，官網：https://www.virtualbox.org 
-       2. 安裝
-    2. 安裝 CentOS 8 作業系統
-    3. 設定 Nginx + PHP-Fpm 環境
-    4. 站台基本安全設定
+       2. 安裝 VirtualBox
+       3. 新增虚擬機
+    2. 安裝與設定 Linux 作業系統
+       1. 安裝 CentOS 8 Linux 作業系統
+       2. 設定 Nginx + PHP-FPM + MySQL 環境
+       3. 站台基本安全設定
 #### 第二節 開發環境建置
     1. 安裝開發工具 VSCode 
        1. 官網: https://code.visualstudio.com/docs/?dv=win
