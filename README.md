@@ -9,8 +9,7 @@
        3. 新增虚擬機
     2. 安裝與設定 Linux 作業系統
        1. 安裝 CentOS 8 Linux 作業系統
-       2. 設定 Nginx + PHP-FPM + MySQL 環境
-       3. 站台基本安全設定
+       2. 設定網路組態與遠端控制
 #### 第二節 開發環境建置
     1. 安裝開發工具 VSCode 
        1. 官網: https://code.visualstudio.com/docs/?dv=win
