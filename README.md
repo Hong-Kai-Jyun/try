@@ -14,15 +14,15 @@
 <!-- include(Ch1/index) -->
 #### 第一節 正式環境建置
     1. 安裝與使用虚擬機軟體
-       1. 下載 VirtualBox，官網：https://www.virtualbox.org 
-       2. 安裝 VirtualBox
-       3. 新增虚擬機
+       (1). 下載 VirtualBox，官網：https://www.virtualbox.org 
+       (2). 安裝 VirtualBox
+       (3). 新增虚擬機
     2. 安裝與設定 Linux 作業系統
-       1. 安裝 CentOS 8 Linux 作業系統
-       2. 設定網路組態與遠端控制
+       (1). 安裝 CentOS 8 Linux 作業系統
+       (2). 設定網路組態與遠端控制
 #### 第二節 開發環境建置
     1. 安裝開發工具 VSCode 
-       1. 官網: https://code.visualstudio.com/docs/?dv=win
+       (1). 官網: https://code.visualstudio.com/docs/?dv=win
     2. VSCode 基本操作與使用
 ### 第二章 Linux 作業系統基本操作
 #### 第一節 檔案與目錄管理
@@ -38,6 +38,18 @@
 #### 第一節 版控的觀念與使用
 #### 第二節 使用 Git 指令
 #### 第三節 使用 GitHub 站台儲放程式碼
+#### 第四節 使用 MarkDown 語法
 
 ### 第五章 PHP 基本語法
-    
+#### 第一節 PHP 基本觀念
+    1. Web 站台的運作方式
+    2. PHP 的運作方式
+#### 第二節 變數與資料型態
+#### 第三節 運算子
+
+### 參考文獻
+#### 參考書籍
+#### 參考網站
+    1. 為自己學 Git: https://gitbook.tw/
+    2. MarkDown 文件：https://markdown.tw/
+    3. https://www.ithome.com.tw/news/95283
