@@ -6,10 +6,10 @@
     2. 程式碼放置於 GitHub 站台
 #### 證照考試
     1. 國內證照考試
-       1. TQC MySQL
+       (1). TQC MySQL
     2. 國外證照考試
-       1. Zend PHP
-       2. Oracle MySQL  
+       (1). Zend PHP
+       (2). Oracle MySQL  
 ### 第一章 環境建置
 <!-- include(Ch1/index) -->
 #### 第一節 正式環境建置
