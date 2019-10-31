@@ -52,4 +52,6 @@
 #### 參考網站
     1. 為自己學 Git: https://gitbook.tw/
     2. MarkDown 文件：https://markdown.tw/
-    3. https://www.ithome.com.tw/news/95283
+    3. GitFlow 觀念：https://medium.com/kuma%E8%80%81%E5%B8%AB%E7%9A%84%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E6%95%99%E5%AE%A4/%E5%9F%BA%E7%A4%8E-git-flow-%E5%B7%A5%E4%BD%9C%E6%B3%95-fa50b1dddc4f
+    4. 什麼是 CI/CD:https://medium.com/@william456821/%E4%BB%80%E9%BA%BC%E6%98%AF-ci-cd-72bd5ae571f1
+    5. https://www.ithome.com.tw/news/95283
