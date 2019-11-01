@@ -12,7 +12,7 @@
        (2). Oracle MySQL  
 ### 第一章 環境建置
 <!-- include(Ch1/index) -->
-#### 第一節 正式環境建置
+#### 第一節 正式環境建置 [內容](ch1/README.md)
     1. 安裝與使用虚擬機軟體
        (1). 下載 VirtualBox，官網：https://www.virtualbox.org 
        (2). 安裝 VirtualBox
