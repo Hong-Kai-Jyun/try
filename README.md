@@ -13,22 +13,19 @@
 
 ### 第一章 環境建置 [內容](ch1/README.md)
 <!-- include(Ch1/index) -->
-+ *正式環境建置*
-<pre>
-    1. 安裝與使用虚擬機軟體
-       (1). 下載 VirtualBox，官網：https://www.virtualbox.org 
-       (2). 安裝 VirtualBox
-       (3). 新增虚擬機
-    2. 安裝與設定 Linux 作業系統
-       (1). 安裝 CentOS 8 Linux 作業系統
-       (2). 設定網路組態與遠端控制
-</pre>
-+ *開發環境建置*
-<pre>
-    1. 安裝開發工具 VSCode 
-       (1). 官網: https://code.visualstudio.com/docs/?dv=win
-    2. VSCode 基本操作與使用
-</pre>
+##### 正式環境建置
++ 安裝與使用虚擬機軟體
+  + 下載 VirtualBox，官網：https://www.virtualbox.org 
+  + 安裝 VirtualBox
+  + 新增虚擬機
++ 安裝與設定 Linux 作業系統
+  + 安裝 CentOS 8 Linux 作業系統
+  + 設定網路組態與遠端控制
+
+##### 開發環境建置
++ 安裝開發工具 VSCode 
+  + 官網: https://code.visualstudio.com/docs/?dv=win
+  + VSCode 基本操作與使用
 
 ### 第二章 Linux 作業系統基本操作 [內容](ch2/README.md)
 + 檔案與目錄管理
