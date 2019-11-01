@@ -2,17 +2,19 @@
 ## 課程大綱
 ### 第Ｏ章 課前說明 [內容](ch0/README.md)
 #### 專案製作
-    1. 專案構思與製作
-    2. 程式碼放置於 GitHub 站台
++ 專案構思與製作
++ 程式碼放置於 GitHub 站台
 #### 證照考試
-    1. 國內證照考試
-       (1). TQC MySQL
-    2. 國外證照考試
-       (1). Zend PHP
-       (2). Oracle MySQL  
++ 國內證照考試
+  + TQC MySQL
++ 國外證照考試
+  + Zend PHP
+  + Oracle MySQL  
+
 ### 第一章 環境建置 [內容](ch1/README.md)
 <!-- include(Ch1/index) -->
-#### 第一節 正式環境建置
++ *正式環境建置*
+<pre>
     1. 安裝與使用虚擬機軟體
        (1). 下載 VirtualBox，官網：https://www.virtualbox.org 
        (2). 安裝 VirtualBox
@@ -20,17 +22,21 @@
     2. 安裝與設定 Linux 作業系統
        (1). 安裝 CentOS 8 Linux 作業系統
        (2). 設定網路組態與遠端控制
-#### 第二節 開發環境建置
+</pre>
++ *開發環境建置*
+<pre>
     1. 安裝開發工具 VSCode 
        (1). 官網: https://code.visualstudio.com/docs/?dv=win
     2. VSCode 基本操作與使用
+</pre>
+
 ### 第二章 Linux 作業系統基本操作 [內容](ch2/README.md)
-#### 第一節 檔案與目錄管理
-#### 第二節 使用者與群組管理
-#### 第三節 基本權限管理
-#### 第四節 軟體安裝與管理
-#### 第五節 Web 站台架設
-#### 第六節 基本安全設定
++ 檔案與目錄管理
++ 使用者與群組管理
++ 基本權限管理
++ 軟體安裝與管理
++ Web 站台架設
++ 基本安全設定
 
 ### 第三章 MySQL 操作與 SQL 語法 [內容](ch3/README.md)
 
