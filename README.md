@@ -1,6 +1,6 @@
 # PHP 後端網路工程師養成班
 ## 課程大綱
-### 第Ｏ章 課前說明 [內容](ch0/README.md)
+### 第零章 課前說明 [內容](ch0/README.md)
 #### 專案製作
 + 專案構思與製作
 + 程式碼放置於 GitHub 站台
@@ -43,7 +43,12 @@
 #### 使用 GitHub 站台儲放程式碼
 #### 使用 MarkDown 語法
 
-### 第五章 PHP 基本語法 [內容](ch5/README.md)
+### 第五章 HTML 與 CSS 基本語法 [內容](ch5/README.md)
+#### HTML5 基本語法
+#### CSS3 基本語法
+#### Bootstrap 4 框架基本語法
+
+### 第六章 PHP 基本語法 [內容](ch6/README.md)
 #### PHP 基本觀念
 + Web 站台的運作方式
 + PHP 的運作方式
