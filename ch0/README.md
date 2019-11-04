@@ -22,7 +22,7 @@
   + 請開始構思網站功能
     + 請利用 Visual Studio Code 寫下這些功能名稱與作用
     + 將每個功能運作細節寫出來
-    + 實作過程中，可修正不合理的部份
+    + 實作過程中，可修正不合理/無法實作的部份
     + 不要偏離目標太遠
 + 程式碼放置於 GitHub 站台
   + 利用 git 推送程式碼
@@ -32,10 +32,13 @@
   
 #### 證照考試
 + 國內證照考試
-  + TQC MySQL
+  + [TQC MySQL](https://www.tqc.org.tw/TQCNet/CertificateDetail.aspx?CODE=hzuv6/UBs2Q=)
 + 國外證照考試
-  + Zend PHP
-  + Oracle MySQL  
+  + [Zend PHP](https://www.zend.com/training/php-certification-exam)
+    + ![ZCE 線上查詢](img/p1.png "PHP 5.3 ZCE 查詢")
+    + ![ZCE 證照](img/ZCE_Php53.jpg "ZCE 證照")
+  + [Oracle MySQL](https://education.oracle.com/mysql/mysql-database-administration/product_159)
+    + ![MySQL 證照](img/MySQL5_OCA.jpg "MySQL 5 證照")
 #### 程式開發流程與佈署認知
 + 了解網站應用系統架構
 + 開發環境與正式環境需求
