@@ -20,13 +20,28 @@
     + 開啟 sshd 服務（預設開啟）
       + Windows 作業系統中，可使用 [putty](https://www.putty.org/) 進行連線
     + 開啟 xrdp 遠端桌面服務
-      1. #yum install epel-release
-      2. #yum install xrdp
-      3. #systemctl start xrdp
-      4. #systemctl enable xrdp (指定開機時啟動服務)) 
+    <pre><code>  #yum install epel-release
+      #yum install xrdp
+      #systemctl start xrdp
+      #systemctl enable xrdp (指定開機時啟動服務)) 
+      #firewall-cmd --add-service=xrdp --permanent
+      #firewall-cmd --reload
+    </code></pre>
 
 #### 開發環境建置
 + 安裝開發工具 [VSCode](https://code.visualstudio.com/docs/?dv=win) 
   + 官網: https://code.visualstudio.com/docs/?dv=win
   + VSCode 基本操作與使用
     + 安裝 PHP 程式语言開發模組
+      + File -> Preferences -> Extensions
+      + 輸入 「PHP」，選擇 「PHP IntelliSense」，再按下「Install」按鍵 
+    + 開新檔案 test.php，輸入下列程式碼:
+      ```php
+        <?php
+          phpinfo();
+        />
+    + 存檔後，送上 github
+
+#### 參考文獻
+##### Visual Studio Code
++ [安裝/設定 Visual Studio Code 編輯器](https://ithelp.ithome.com.tw/articles/10195139?sc=iThelpR)
