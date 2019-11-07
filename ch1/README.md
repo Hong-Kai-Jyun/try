@@ -14,6 +14,7 @@
     + 虚擬機匯出與匯入
       + 方便回家練習
       + 備份與回復
+
 + 安裝與設定 Linux 作業系統
   + 安裝 [CentOS 8 Linux](https://www.centos.org/) 作業系統
     + 官網：https://www.centos.org/
