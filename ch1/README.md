@@ -31,6 +31,12 @@
       #firewall-cmd --add-service=xrdp --permanent
       #firewall-cmd --reload
     </code></pre>
+  + 開啟 Web 操控介面
+    <pre><code> # systemctl enable --now cockpit.service  (啟動 Web 操控介面)
+    # systemctl status cockpit.service -l  (檢查是否正常運作)
+    </code></pre>
+    + 開啟瀏覽器，輸入網址 http://IP位置:9090
+    + 使用 root 帳號、密碼即可登入！
 
 #### 開發環境建置
 + 安裝開發工具 [VSCode](https://code.visualstudio.com/docs/?dv=win) 
@@ -43,7 +49,7 @@
       ```php
         <?php
           phpinfo();
-        />
+        ?>
     + 存檔後，送上 github
 
 #### 參考文獻
