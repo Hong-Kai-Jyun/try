@@ -24,10 +24,10 @@
 
     ||檔案|目錄|
     |:---:|---|---|
-    |新增|touch|mkdir|
-    |修改|vim、mv|mv|
+    |新增|touch、vim、nano|mkdir|
+    |修改|vim、mv、nano|mv|
     |刪除|rm|rmdir、rm -rf|
-    |查詢|||
+    |查詢|less、more、cat、find|ls、find|
 
   + 
 
