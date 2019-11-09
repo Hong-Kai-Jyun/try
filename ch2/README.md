@@ -16,9 +16,9 @@
   + 參數：改變指令執行規則，例如：-h or --help
   + 引數：指令執行對象，例如：/etc/hosts
   + 範例：
-    + #cd ~      切換目錄到家目錄
-    + #ls -al    列出當下的目錄內容
-    + #ls -al /var/log    列出 /var/log/　目錄底下的子目錄與檔案
+    <pre><code>#cd ~      切換目錄到家目錄
+    #ls -al    列出當下的目錄內容
+    #ls -al /var/log    列出 /var/log/　目錄底下的子目錄與檔案</code></pre>
 
 #### 檔案與目錄管理
 + Linux 檔案與目錄架構
