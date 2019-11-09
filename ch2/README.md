@@ -245,8 +245,8 @@
       <pre><code>#firewall-cmd --add-service=http
       #firewall-cmd --add-service=cockpit
       #firewall-cmd --runtime-to-permanent
-      </code></pre>，例：
-    + 針對 port 開啟
+      </code></pre>
+    + 針對 port 開啟，例：
       <pre><code>#firewall-cmd --add-port=8080/tcp
       #firewall-cmd --add-port=1234/tcp</code></pre>
     
