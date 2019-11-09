@@ -218,11 +218,17 @@
       + versionlocak: 鎖住版本不更新
     + 例：
       <pre><code>#yum install epel-release
-      #yum search nginx</code></pre> 
+      #yum install git</code></pre> 
 
 #### Web 站台架設
 + Nginx 套件安裝與啟用
+  + 使用 YUM 進行安裝
+  <pre><code>#yum install nginx
+  #systemctl enable --now nginx</code></pre>
+  + 利用瀏覽器查看一下站台預設網頁是否開啟
 + PHP 套件安裝與啟用
+  + 使用 YUM 進行安裝
+  <pre><code></code></pre>
 
 #### 基本安全設定
 + 基本防火牆應用
