@@ -32,7 +32,7 @@
       #firewall-cmd --reload
     </code></pre>
   + 開啟 Web 操控介面
-    <pre><code> # systemctl enable --now cockpit.service  (啟動 Web 操控介面)
+    <pre><code># systemctl enable --now cockpit.service  (啟動 Web 操控介面)
     # systemctl status cockpit.service -l  (檢查是否正常運作)
     </code></pre>
     + 開啟瀏覽器，輸入網址 http://IP位置:9090
