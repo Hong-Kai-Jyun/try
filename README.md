@@ -19,7 +19,7 @@
 + 版控需求與應用
 + 佈署流程的認知
 ### 第一章 環境建置 [內容](ch1/README.md)
-<!-- include(Ch1/index) -->
+
 #### 正式環境建置
 + 安裝與使用虚擬機軟體
   + 下載 VirtualBox，官網：https://www.virtualbox.org 
