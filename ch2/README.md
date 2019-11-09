@@ -128,8 +128,8 @@
     + \- : closed
   + 權限與使用者群組的相依性：
     + 查詢指令範例：
-    <pre><code># ls -al /etc/hosts
-    -rw-r--r--. 1 root root 325  7月 23 06:21 /etc/hosts</code></pre>
+      <pre><code># ls -al /etc/hosts
+      -rw-r--r--. 1 root root 325  7月 23 06:21 /etc/hosts</code></pre>
     + 各組權限說明圖
       + ![各組權限說明圖](img/1.jpg "各組權限說明圖")
       + 權限每三個一組
@@ -223,16 +223,47 @@
 #### Web 站台架設
 + Nginx 套件安裝與啟用
   + 使用 YUM 進行安裝
-  <pre><code>#yum install nginx
-  #systemctl enable --now nginx</code></pre>
+    <pre><code>#yum install nginx
+    #systemctl enable --now nginx
+    #firewall-cmd --add-service=http</code></pre>
   + 利用瀏覽器查看一下站台預設網頁是否開啟
 + PHP 套件安裝與啟用
   + 使用 YUM 進行安裝
-  <pre><code></code></pre>
+    <pre><code>#yum install php php-fpm php-mcrypt php-json php-gd php-mbstring
+    #systemctl enable --now php-fpm
+    #systemctl restart nginx
+    #cd /usr/share/nginx/html
+    #git clone http://xxxxx/xxx.git (取得您的project內容)
+    #restorecon -Rvv /usr/share/nginx/html</code></pre>
+  + 利用瀏覽器查看一下站台網頁
 
 #### 基本安全設定
 + 基本防火牆應用
+  + Linux 防火牆預設是開啟的
+  + 利用 firewall-cmd 指令可輕鬆管理防火牆
+    + 針對服務開啟，例：
+      <pre><code>#firewall-cmd --add-service=http
+      #firewall-cmd --add-service=cockpit
+      #firewall-cmd --runtime-to-permanent
+      </code></pre>，例：
+    + 針對 port 開啟
+      <pre><code>#firewall-cmd --add-port=8080/tcp
+      #firewall-cmd --add-port=1234/tcp</code></pre>
+    
 + SELinux 的基本應用
+  + Linux 上的 SELinux 預設是開啟的
+    + 查詢目前是否開啟 SELinux:
+      <pre><code>#getenforce</code></pre>
+    + 設定開啟/關閉 SELinux:
+      <pre><code>#setenforce [1|0]</code></pre>
+  + 針對服務設定
+    + 查詢相關服務程序是否被允許開啟:
+      <pre><code>#getsebool -a | grep http</code></pre>
+    + 啟動或關閉某一項程序:
+      <pre><code>#setsebool -P httpd_can_network_connect [on|off]</code></pre>
+  + 除錯或是障礙排除方式
+    + 查詢 /var/log/messages 檔案
+    + 按檔案內的提示操作即可
 
 ##### 參考文獻
 + [鳥哥的私房菜](http://linux.vbird.org/)
