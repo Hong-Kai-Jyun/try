@@ -55,6 +55,17 @@
 + SELinux 的基本應用
 
 ### 第三章 MySQL 操作與 SQL 語法 [內容](ch3/README.md)
+#### 安裝 MySQL
++ Linux 平台安裝 MySQL Server
++ Linux 平台安裝 phpMyAdmin 管理程式
++ Windows 平台安裝 MySQL Workbench
+#### 資料收集與整理
++ 資料收集與整理
++ 資料表正規化
+#### MySQL 基本操作
++ SQL 語法認知
++ 建立資料庫與資料表
++ 將資料導入資料庫
 
 ### 第四章 Git 版控與 GitHub 的應用 [內容](ch4/README.md)
 #### 版控的觀念與使用
