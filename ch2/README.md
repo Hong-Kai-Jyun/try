@@ -50,10 +50,26 @@
     |刪除|rm|rmdir、rm -rf|
     |查詢|less、more、cat、find|ls、find|
 
+  + 例：
+    <pre><code>#mkdir /tmp/hello
+    #touch /tmp/hello/test1
+    #nano /tmp/hello/test1
+    #ls -al /tmp/hello/test1
+    #less /tmp/hello/test1
+    #cat /tmp/hello/test1
+    #rmdir /tmp/hello
+    #rm /tmp/hello/test1
+    #rm -rf /tmp/hello</code></pre>
+
   + 其他常用指令：
     + ll: 與 ls 功能相同
     + ln: 建立連結目錄
     + alias: 建立指令別名
+    + 例：
+      <pre><code>#ln -s /etc/hosts /tmp/hosts
+      #ll /tmp/hosts
+      #rm /tmp/hosts
+      #alias</code></pre>
 
 #### 使用者與群組管理
 + 使用者與群組概念
@@ -88,6 +104,14 @@
   |刪除|userdel|groupdel|
   |查詢|id、who、w、whoami|id|
 
+  + 例：
+    <pre><code>#useradd student
+    #passwd student
+    #id student
+    #groupadd golf
+    #usermod -aG golf student
+    #id student</code></pre>
+
 #### 基本權限管理
 + Linux 權限概念
   + 權限基本精神：使用者對於資源的使用權利
@@ -103,7 +127,7 @@
     + t : stick bit
     + \- : closed
   + 權限與使用者群組的相依性：
-    + 查詢指令：
+    + 查詢指令範例：
     <pre><code># ls -al /etc/hosts
     -rw-r--r--. 1 root root 325  7月 23 06:21 /etc/hosts</code></pre>
     + 各組權限說明圖
@@ -111,8 +135,49 @@
       + 權限每三個一組
       + 每組各有 r、w、x 等三個權限可設定
       + 每一組權限針對不同的角色做限定
+      + 權限值第一個值為檔案類型：
+        + \- : 表示一般檔案
+        + d : 表示該檔案為目錄
+        + l : 表示該檔案為軟連結檔(捷徑檔)
+        + s : 表示 socket 類型檔案
+        + p : 表示管線通訊類型檔案
+        + c : 表示卡類設備
+        + d : 表示儲存設備
+      + 權限可以使用數字表示：
+        + r : 4
+        + w : 2
+        + x : 1
+        + \- : 0
+        + 每組權限數字相加後為權限代表值，例：
+          + rwxr-xr-- : 754
+          + rw-r--r-- : 644
   
 + 權限管理指令
+  + 修改檔案與目錄的所屬使用者與群組：
+
+    |指令名稱|使用者或群組|檔案或目錄|
+    |:---:|:---:|:---:|
+    |chown|[使用者]:[群組]|檔案或目錄名稱|
+    |chgrp|[群組]|檔案或目錄名稱|
+
+    + 例：
+      <pre><code>#touch /tmp/test123
+      #ls -al /tmp/test123
+      #chown student:root /tmp/test123
+      #ls -al /tmp/test123</code></pre>
+
+  + 修改檔案的權限值設定：
+
+    |指令名稱|角色|運算符|權限值|檔案或目錄|
+    |:---:|:---:|:---:|:---:|:---:|
+    |chmod|u g o a| + \- = |r w x|檔案或目錄名稱|
+
+    + 例：
+      <pre><code>#touch /tmp/test
+      #ls -al /tmp/test
+      #chmod u+x,g-w,o=---  /tmp/test
+      #ls -al /tmp/test
+      </code></pre>
 
 #### 軟體安裝與管理
 + Linux 軟體安裝概念
