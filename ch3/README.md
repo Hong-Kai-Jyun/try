@@ -14,18 +14,59 @@
     #firewall-cmd --add-service=mysql
     #firewall-cmd --runtime-to-permanent
     #systemctl restart mysqld</code></pre>
-    
+
 + Linux 平台安裝 phpMyAdmin 管理程式
+  + 到 phpMyAdmin 官網取得檔案
+  　<pre><code>#cd /usr/share/nginx/html
+  #wget http://</code></pre>
+  + 解開壓縮檔
+    <pre><code>#tar zxvf </code></pre>
+  + 回復 selinux 設定
+    <pre><code>#restorecon -Rvv /usr/share/nginx/html</code></pre>
+  + 修改 phpMyAdmin 設定檔
+  + 打開瀏覽器，以 root 身份登入！
 + Windows 平台安裝 MySQL Workbench
 
 #### 資料收集與整理
 + 資料收集與整理
-  + 將需要的資料收集
-  + 將資料內容分類定出名稱
-  + 利用表格將資料整理好
+  1. 將需要的資料收集
+  2. 將資料內容分類定出名稱
+  3. 利用表格將資料整理好
+  4. 收集好表格，形成資料庫
 + 資料表正規化
+  + 第一正規化
+  + 第二正規化
+  + 第三正規化
++ 回家作業：
+  + 收集自己專案的相關資料
+  + 利用正規化規則，完成資料表定義
 #### MySQL 基本操作
 + SQL 語法認知
+  + DCL
+  + DML
+  + DDL
++ 資料庫內可接受的資料類型
+  + 
 + 操作資料庫與資料表
+  + 資料庫建立與收集資料流程相反
+    1. 先建立資料庫
+    2. 在資料庫內建資料表
+    3. 在資料表內建欄位
+    4. 在欄位內填入資料
+  + 常用指令列表：
+    ||資料庫|資料表|
+    |:---:|:---:|:---:|
+    |新增|CREATE DATABASE|CREATE TABLE|
+    |修改|ALTER DATABASE|ALTER TABLE|
+    |刪除|DROP DATABASE|DROP TABLE|
+    |查詢|SHOW DATABASE|SHOW COLUME|
+  + 操作範例：
+  　<pre><code>#mysql -u root -p
+  \>SHOW DATABASES;
+  \>CREATE DATABASE cars;
+  \>USE cars;
+  \>CREATE TABLE customers {
+  \>
+  \> };</code></pre>
 + 操作資料內容
 + 操作資料庫系統
