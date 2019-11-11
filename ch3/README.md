@@ -116,10 +116,18 @@
 
 + 資料庫內可接受的資料類型
   + 數值資料 (Numeric Data)
+    + integer, float, money
+    + 可搭配內建的數值函數來做資料處理
   + 字串(元)資料 (Character & Strings Data)
+    + 儲存字元或符號之資料型別
   + 日期/時間資料 (Date Data)
+    + 用來記錄日期/時間的資料型別，有 date, time, timestamp 等
   + 布林值 (Boolean Data)
+    + true/false, Yes/No, 1/0
   + 空值 (NULL Data)
+    + 沒有資料存在於欄位！
+    + 在建立資料表時，可以設定欄位是否允許空值！
+    + NULL 值和一個空字串 '' 是有不一樣意涵的！
   
 + 操作資料庫與資料表
   + 資料庫建立與收集資料流程相反
@@ -134,10 +142,14 @@
   \>CREATE DATABASE cars;
   \>USE cars;
   \>CREATE TABLE customers {
-  \>
+  \>  id INT PRIMARY KEY,
+  \>  Name VARCHAR(50) NOT NULL,
+  \>  Address VARCHAR(255) NULL,
+  \>  Phone VARCHAR(10) NULL
   \> };</code></pre>
   
 + 操作資料內容
+  + 
 + 操作資料庫系統
 
 #### 參考文獻
