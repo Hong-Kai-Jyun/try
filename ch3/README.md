@@ -114,7 +114,12 @@
       + 各類輔助指令：SELECT,FROM,WHERE,GROUP BY,ORDER BY
 
 + 資料庫內可接受的資料類型
-  + 
+  + 數值資料 (Numeric Data)
+  + 字串(元)資料 (Character & Strings Data)
+  + 日期/時間資料 (Date Data)
+  + 布林值 (Boolean Data)
+  + 空值 (NULL Data)
+  
 + 操作資料庫與資料表
   + 資料庫建立與收集資料流程相反
     1. 先建立資料庫
@@ -144,3 +149,4 @@
 
 #### 參考文獻
 + [SQL 教學](https://www.fooish.com/sql/)
++ [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started)
