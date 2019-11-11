@@ -18,15 +18,25 @@
 + Linux 平台安裝 phpMyAdmin 管理程式
   + 到 phpMyAdmin 官網取得檔案
   　<pre><code>#cd /usr/share/nginx/html
-  #wget http://</code></pre>
+  #wget https://files.phpmyadmin.net/phpMyAdmin/4.9.1/phpMyAdmin-4.9.1-all-languages.tar.gz</code></pre>
   + 解開壓縮檔
-    <pre><code>#tar zxvf </code></pre>
+    <pre><code>#tar zxvf phpMyAdmin-4.9.1-all-languages.tar.gz
+    #mv phpMyAdmin-4.9.1-all-languages phpMyAdmin</code></pre>
   + 回復 selinux 設定
     <pre><code>#restorecon -Rvv /usr/share/nginx/html</code></pre>
   + 修改 phpMyAdmin 設定檔
+    <pre><code>#cd phpMyAdmin
+    #cp config.sample.inc.php config.inc.php
+    #vim config.inc.php
+    $cfg['blowfish_secret'] = md5($srcret_string.date("Ymd",time()));
+    </code></pre>
   + 打開瀏覽器，以 root 身份登入！
+  
 + Windows 平台安裝 MySQL Workbench
-
+  + 下載網址 [MySQL Community Downloads](https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.18-winx64.msi)
+  + 下載後，直接安裝！
+  + 開啟程式後，設定連接資料庫的 IP 位置以及帳密
+  
 #### 資料收集與整理
 + 資料收集與整理
   1. 將需要的資料收集
