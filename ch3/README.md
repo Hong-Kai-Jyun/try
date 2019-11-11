@@ -99,12 +99,14 @@
     3. 在資料表內建欄位
     4. 在欄位內填入資料
   + 常用指令列表：
+  
     ||資料庫|資料表|
     |:---:|:---:|:---:|
     |新增|CREATE DATABASE|CREATE TABLE|
     |修改|ALTER DATABASE|ALTER TABLE|
     |刪除|DROP DATABASE|DROP TABLE|
     |查詢|SHOW DATABASE|SHOW COLUME|
+  
   + 操作範例：
   　<pre><code>#mysql -u root -p
   \>SHOW DATABASES;
