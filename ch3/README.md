@@ -128,6 +128,11 @@
     + 沒有資料存在於欄位！
     + 在建立資料表時，可以設定欄位是否允許空值！
     + NULL 值和一個空字串 '' 是有不一樣意涵的！
+    + 不能索引允許有 NULL 值的欄位
+    + 要索引的欄位為 NOT NULL
+    + 不能插入 NULL 到具有索引的欄位中
+    + 將 NULL 插入資料表中的 TIMESTAMP 欄位，則代表目前的日期和時間
+    + 將 NULL 插入一個 AUTO_INCREMENT 欄位，則代表目前順序中的下一個號碼
   
 + 操作資料庫與資料表
   + 資料庫建立與收集資料流程相反
@@ -137,21 +142,95 @@
     4. 在欄位內填入資料
 
   + 操作範例：
+    + 文字介面操作方式：
   　<pre><code>#mysql -u root -p
   \>SHOW DATABASES;
   \>CREATE DATABASE cars;
   \>USE cars;
-  \>CREATE TABLE customers {
-  \>  id INT PRIMARY KEY,
+  \>CREATE TABLE customers (
+  \>  id INT(11) AUTO_INCREMENT,
   \>  Name VARCHAR(50) NOT NULL,
   \>  Address VARCHAR(255) NULL,
-  \>  Phone VARCHAR(10) NULL
-  \> };</code></pre>
-  
-+ 操作資料內容
-  + 
-+ 操作資料庫系統
+  \>  Phone VARCHAR(10) NULL,
+  \>  PRIMARY KEY(id)
+  \> ) ENGINE = InnoDB
+  CHARACTER SET = utf8
+  COLLATE = utf8_unicode_ci ;</code></pre>
+  + 可利用 phpMyAdmin 做為建立資料庫、資料表的介面
 
++ 操作資料內容
+  + 新增資料
+    + 利用 INSERT 指令，將資料放進資料表內
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE cars;
+      >INSERT INTO customers(Name, Address, Phone)
+      >VALUES('Peter','No. 10, test load','0912345678');
+      </code></pre>
+  + 修改資料
+    + 利用 UPDATE 指令，修改指定的資料
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE cars;
+      >UPDATE customers SET Name = 'James' WHERE Name = 'Peter';
+      </code></pre>
+  + 查詢資料
+    + 利用 SELECT 指令，進行資料查詢
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE cars;
+      >SELECT * FROM customers WHERE Name = 'James';
+      </code></pre>
+  + 刪除資料
+    + 利用 DELETE 指令，進行資料的刪除
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE cars;
+      >DELETE FROM customers WHERE Name = 'James';
+      </code></pre>
+
++ 操作資料庫系統
+  + 建立資料庫使用者帳號
+    + 利用 CREATE USER 指令，建立使用者
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE mysql;
+      >CREATE USER 'peter'@'localhost' IDENTIFIED BY 'a123456789';
+      </code></pre>
+  + 授與資料庫使用權限
+    + 利用 GRANT 指令，授與使用者使用資料庫的權限
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE mysql;
+      >GRANT ALL PRIVILEGES ON cars.* TO 'peter'@'localhost';
+      >FLUSH PRIVILEGES;
+      </code></pre>
+    + 權限值類型：
+      + ALL PRIVILEGES：所有的權限
+      + CREATE：可以建立資料表或資料庫的權限
+      + DROP：可以刪除資料表或資料庫的權限
+      + DELETE：可以在資料表中刪除資料的權限
+      + INSERT：可以新增資料到資料表的權限
+      + SELECT：可以查詢資料表的權限
+      + UPDATE：可以更新資料表中的資料的權限
+      + GRANT OPTION：可以授權使用權限給其他使用者的權限
+  + 撤銷資料庫使用權限
+    + 利用 REVOKE 指令，取回使用者使用資料庫的權限
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE mysql;
+      >REVOKE ALL PRIVILEGES FROM 'peter'@'localhost';
+      >FLUSH PRIVILEGES;
+      </code></pre>
+  + 刪除資料庫使用者帳號
+    + 利用 DROP USER 指令，刪除資料庫使用者帳號
+    + 操作範例：
+      <pre><code>#mysql -u root -p
+      >USE mysql;
+      >DROP USER 'peter'@'localhost';
+      >FLUSH PRIVILEGES;
+      </code></pre>
+      
 #### 參考文獻
 + [SQL 教學](https://www.fooish.com/sql/)
 + [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started)
