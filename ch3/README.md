@@ -84,6 +84,7 @@
 + 回家作業：
   + 收集自己專案的相關資料
   + 利用正規化規則，完成資料表定義
+
 #### MySQL 基本操作
 + SQL 語法認知
   + DCL(Data Control Language):資料控制語言
@@ -127,15 +128,6 @@
     3. 在資料表內建欄位
     4. 在欄位內填入資料
 
-  + 常用指令列表：
-  
-    ||資料庫|資料表|
-    |:---:|:---:|:---:|
-    |新增|CREATE DATABASE|CREATE TABLE|
-    |修改|ALTER DATABASE|ALTER TABLE|
-    |刪除|DROP DATABASE|DROP TABLE|
-    |查詢|SHOW DATABASE|SHOW COLUME|
-  
   + 操作範例：
   　<pre><code>#mysql -u root -p
   \>SHOW DATABASES;
@@ -144,6 +136,7 @@
   \>CREATE TABLE customers {
   \>
   \> };</code></pre>
+  
 + 操作資料內容
 + 操作資料庫系統
 
