@@ -69,6 +69,36 @@
     　3. 做提交的動作，這會讓存在預存區的檔案快照永久地儲存在 Git 目錄中。
 
 #### 使用 Git 指令
++ 初次設定 Git
+  + Git 附帶一個名為 git config 的工具，讓使用者能夠取得和設定組態參數。
+  + 這些參數被存放在下列三個地方：
+    + 檔案 /etc/gitconfig：裡面包含該系統所有使用者和使用者倉儲的預設設定。如果傳遞 --system 參數給 git config，就會明確地從這個檔案讀取或寫入設定。
+    + 檔案 ~/.gitconfig、~/.config/git/config：使用者帳號專用的設定。只要傳遞 --global，就會明確地讓 Git 從這個檔案讀取或寫入設定！
+    + 任何倉儲中 Git 資料夾的 config 檔案（位於 .git/config）：這個倉儲的專用設定。
+    + 每個層級的設定皆覆蓋先前的設定，所以在 .git/config 的設定優先權高於在 /etc/gitconfig 裡的設定。
+  + 設定識別資料
+    + 安裝 Git 後首先應該做的事是設定使用者名稱及電子郵件。
+    + 設定指令：(文字介面中的使用方式)
+      <pre><code>$ git config --global user.name "John Doe"
+      $ git config --global user.email johndoe@example.com</code></pre>
+  + 指定編輯器
+    + 可設定預設的文書編輯器，當 Git 需要使用者輸入訊息時會使用它。
+    + 預設情況下，Git 會使用系統預設的編輯器。
+    + 可手動修改：(Linux)
+    　<pre><code>$ git config --global core.editor emacs</code></pre>
+    + 可手動修改：(Windows)
+    　<pre><code>$ git config --global core.editor "'C:/Program Files(x86)/Notepad++/notepad++.exe' -multiInst -nosession"</code></pre>
+  + 檢查讀者的設定
+    + 使用命令列出 Git 在目前位置能找到的設定值：
+    　<pre><code>$ git config --list
+    $ git config user.name</code></pre>
+  + 取得說明文件
+    + 使用說明文件的方法：
+    　<pre><code>$ git help \<verb\>
+    $ git \<verb\> --help
+    $ man git-\<verb\>
+    $ git help config</code></pre>
++
 #### 使用 GitHub 站台儲放程式碼
 #### 使用 MarkDown 語法
 #### 參考文獻
@@ -77,4 +107,4 @@
 + [如何使用 Markdown 來撰寫 Docs](https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown)
 ##### Git
 + [Git 官網說明](https://git-scm.com/book/zh-tw/v2)
-+ 
++ [開始程式碼版控](https://ithelp.ithome.com.tw/articles/10202278)
