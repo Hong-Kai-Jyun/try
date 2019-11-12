@@ -124,4 +124,5 @@
 + [如何使用 Markdown 來撰寫 Docs](https://docs.microsoft.com/zh-tw/contribute/how-to-write-use-markdown)
 ##### Git
 + [Git 官網說明](https://git-scm.com/book/zh-tw/v2)
+  + [舊版的官網](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B)
 + [開始程式碼版控](https://ithelp.ithome.com.tw/articles/10202278)
