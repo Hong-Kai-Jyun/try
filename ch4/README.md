@@ -98,7 +98,17 @@
     $ git \<verb\> --help
     $ man git-\<verb\>
     $ git help config</code></pre>
-+
++ 取得一個 Git 倉儲
+  + 有兩種主要方法來取得一個 Git 倉儲。
+    + 將現有的專案或者資料夾匯入 Git
+    + 從其它伺服器克隆（clone）一份現有的 Git 倉儲。
+  + 在現有資料夾中初始化倉儲
+    + 只需要進入該專案的資料夾並執行：<pre><code>$ git init</code></pre>
+      + 這個命令將會建立一個名為 .git 的子資料夾，其中包含 Git 所有必需的倉儲檔案，也就是 Git 倉儲的骨架。
+    + 如果專案資料夾原本已經有檔案（不是空的），那麼應該馬上追蹤這些原本就有的檔案，然後進行第一次提交。<pre><code>$ git add .
+  $ git commit -m 'initial project version'</code></pre>
+  + 克隆現有的倉儲
+    + 
 #### 使用 GitHub 站台儲放程式碼
 #### 使用 MarkDown 語法
 #### 參考文獻
