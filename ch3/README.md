@@ -81,10 +81,6 @@
   + 第四正規化(4NF):除去多值相依
   + 第五正規化(5NF):除去剩下所有的異常
 
-+ 回家作業：
-  + 收集自己專案的相關資料
-  + 利用正規化規則，完成資料表定義
-
 #### MySQL 基本操作
 + SQL 語法認知
   + DCL(Data Control Language):資料控制語言
@@ -230,7 +226,28 @@
       >DROP USER 'peter'@'localhost';
       >FLUSH PRIVILEGES;
       </code></pre>
-      
+
++ 備份與還原資料庫
+  + 備份資料庫
+    + 操作範例：
+      <pre><code>#mysqldump -u root -p --result-file=c:/workspace/cars.sql cars
+      </code></pre>
+
+  + 還原資料庫
+    + 操作範例：
+      <pre><code>#mysqlimport -u root -p --replace cars c:/workspace/cars.sql
+      </code></pre>
+
++ 練習使用 phpMyAdmin 完成上述練習
++ 練習使用 MySQL Workbench 完成上述練習
+
+#### 回家作業
++ 資料收集與分析作業：
+  + 收集自己專案的相關資料
+  + 利用正規化規則，完成資料表定義
++ 資料庫與資料表建立作業
+  + 建立好自己的專題資料庫
+
 #### 參考文獻
 + [SQL 教學](https://www.fooish.com/sql/)
 + [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started)
