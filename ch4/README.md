@@ -98,6 +98,7 @@
     $ git \<verb\> --help
     $ man git-\<verb\>
     $ git help config</code></pre>
+
 + 取得一個 Git 倉儲
   + 有兩種主要方法來取得一個 Git 倉儲。
     + 將現有的專案或者資料夾匯入 Git
@@ -108,7 +109,13 @@
     + 如果專案資料夾原本已經有檔案（不是空的），那麼應該馬上追蹤這些原本就有的檔案，然後進行第一次提交。<pre><code>$ git add .
   $ git commit -m 'initial project version'</code></pre>
   + 克隆現有的倉儲
-    + 
+    + 取得現有 Git 倉儲的複本:<pre><code>$ git clone \<url\></code></pre>
+    + 例：<pre><code>$ git clone https://github.com/libgit2/libgit2 </code></pre>
+      + 這指令將會建立名為「libgit2」的資料夾，並在這個資料夾下初始化一個 .git 資料夾，從遠端倉儲拉取所有資料，並且取出（checkout）專案中最新的版本。
+      + 若想要將倉儲克隆到「libgit2」以外名字的資料夾，只需要再多指定一個參數即可：<pre><code>$ git clone https://github.com/libgit2/libgit2 mylibgit</code></pre>
+
++ 紀錄變更到版本庫中
++ 
 #### 使用 GitHub 站台儲放程式碼
 #### 使用 MarkDown 語法
 #### 參考文獻
