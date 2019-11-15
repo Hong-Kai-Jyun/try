@@ -79,7 +79,7 @@
   + Git 附帶一個名為 git config 的工具，讓使用者能夠取得和設定組態參數。
   + 這些參數被存放在下列三個地方：
     + 檔案 /etc/gitconfig：裡面包含該系統所有使用者和使用者倉儲的預設設定。如果傳遞 --system 參數給 git config，就會明確地從這個檔案讀取或寫入設定。
-    + 檔案 ~/.gitconfig、~/.config/git/config：使用者帳號專用的設定。只要傳遞 --global，就會明確地讓 Git 從這個檔案讀取或寫入設定！
+    + 檔案 \~/.gitconfig、\~/.config/git/config：使用者帳號專用的設定。只要傳遞 --global，就會明確地讓 Git 從這個檔案讀取或寫入設定！
     + 任何倉儲中 Git 資料夾的 config 檔案（位於 .git/config）：這個倉儲的專用設定。
     + 每個層級的設定皆覆蓋先前的設定，所以在 .git/config 的設定優先權高於在 /etc/gitconfig 裡的設定。
   + 設定識別資料
