@@ -227,7 +227,19 @@
   + 如果有人更早推送到這個遠端的 master 上，則必須先 pull 遠端的版本庫下來，並整併(merge)到本地端的版本庫之後，才可以再推送上去！
   
 + 檢視遠端
-  + 
+  + 使用 **git remote show [remote-name]** 命令可以檢視特定遠端更多資訊！
+    <pre><code>$ git remote show phpexerise
+    * remote phpexerise
+    Fetch URL: https://github.com/antallen/PHPexerise.git
+    Push  URL: https://github.com/antallen/PHPexerise.git
+    HEAD branch: master
+    Remote branch:
+      master tracked
+    Local branch configured for 'git pull':
+      master merges with remote master
+    Local ref configured for 'git push':
+      master pushes to master (up to date)
+</code></pre>
 #### 使用 MarkDown 語法
 #### 參考文獻
 ##### MarkDown
