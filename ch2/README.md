@@ -186,7 +186,7 @@
     |權限值|檔案|目錄|
     |:---:|:---|:---|
     |r|讀取檔案內容|列出目錄內容|
-    |w|寫入或修改檔案內容(<font color="red">不可刪除該檔案</font>)|可新增、刪除檔案與子目錄|
+    |w|寫入或修改檔案內容(<font color="red">無法刪除該檔案</font>)|可新增、刪除檔案與子目錄|
     |x|該檔案可以被執行|可把該目錄當作工作目錄|
 
 #### 軟體安裝與管理
@@ -225,7 +225,7 @@
       + list: 列出所有軟體
       + search : 查詢
       + reinstall: 重裝
-      + versionlocak: 鎖住版本不更新
+      + versionlock: 鎖住版本不更新
     + 例：
       <pre><code>#yum install epel-release
       #yum install git</code></pre> 
