@@ -238,8 +238,16 @@
     Local branch configured for 'git pull':
       master merges with remote master
     Local ref configured for 'git push':
-      master pushes to master (up to date)
-</code></pre>
+      master pushes to master (up to date)</code></pre>
++ 移除或重新命名遠端
+  + 執行 **git remote rename** 來重新命名遠端的簡稱。
+  + 例如：
+    <pre><code>#git remote rename phpexerise phpproject
+    #git remote -v</code></pre>
+  + 移除一個遠端，可以執行 **git remote rm** ：
+    <pre><code>#git remote rm phpproject
+    #git remote -v</code></pre>
+    
 #### 使用 MarkDown 語法
 #### 參考文獻
 ##### MarkDown
