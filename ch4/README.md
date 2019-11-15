@@ -200,6 +200,18 @@
     #git remote -v</code></pre>
     
 + 新增遠端版本庫
+  + 執行 **git remote add <簡稱> <url>** 來新增:
+    <pre><code>#git remote add phpexerise https://github.com/antallen/PHPexerise.git
+    #git remote -v
+    phpexerise	https://github.com/antallen/PHPexerise.git (fetch)
+    phpexerise	https://github.com/antallen/PHPexerise.git (push)
+    </code></pre>
+  + 從遠端版本庫中取得所有資訊，而這些資訊並不存在於本地端的版本庫中：
+    <pre><code>#git fetch phpexerise
+    From https://github.com/antallen/PHPexerise
+   \* [new branch]      master     -> phpexerise/master
+    </code></pre>
+  + 
 #### 使用 MarkDown 語法
 #### 參考文獻
 ##### MarkDown
