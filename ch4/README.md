@@ -211,7 +211,16 @@
     From https://github.com/antallen/PHPexerise
     * [new branch]      master     -> phpexerise/master
     </code></pre>
-  + 
+  + 這個命令會連到遠端專案，然後從遠端專案中將本地端還沒有的資料全部拉下來
+  + 執行完成後，應該會有遠端版本庫中所有分支的參照（reference）
+
++ 從遠端獲取或拉取
+  + **git fetch <簡稱>**  這指令會獲取（fetch）在使用者複製 clone（或者最後一次獲取）之後任何被推送到伺服器上的新的工作內容。
+  + **git fetch** 命令只會下載資料到本地端版本庫—它並不會自動合併任何工作內容，也不會自動修改使用者正在修改的東西
+  + 使用 **git pull** 命令來自動「獲取」並「合併」那個遠端分支到目前的本地端分支
+  + **git clone** 這個命令會「自動地」將本地分支 master 設定為「追蹤」遠端版本庫上的 master！
+
++ 推送到遠端
 #### 使用 MarkDown 語法
 #### 參考文獻
 ##### MarkDown
