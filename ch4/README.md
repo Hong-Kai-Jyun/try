@@ -221,6 +221,13 @@
   + **git clone** 這個命令會「自動地」將本地分支 master 設定為「追蹤」遠端版本庫上的 master！
 
 + 推送到遠端
+  + 推送的命令：**git push [remote-name] [branch-name]**
+  + 想要將 master 分支推送到 phpexerise 伺服器上時,可以執行下列命今將所有完成的提交（commit）推送回伺服器上 :
+    <pre><code>#git push phpexerise master</code></pre>
+  + 如果有人更早推送到這個遠端的 master 上，則必須先 pull 遠端的版本庫下來，並整併(merge)到本地端的版本庫之後，才可以再推送上去！
+  
++ 檢視遠端
+  + 
 #### 使用 MarkDown 語法
 #### 參考文獻
 ##### MarkDown
