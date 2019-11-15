@@ -178,12 +178,19 @@
     + 尚未用 **git add** 預存的—將不會納入本次的提交中
     + 可在 **git commit** 命令的 -m 選項後方直接輸入提交訊息
       + 例：<pre><code>#git commit -m "Hello Kitty"</code></pre>
+  
   + 移除檔案
     + 要從 Git 中刪除一個檔案，需要將它從已追蹤檔案中移除，然後再提交
     + 例：<pre><code>#rm README
       #git status
       #git rm READE
       #git status</code></pre>
+
+  + 移動檔案
+    + Git 可以在檔案移動後很聰明地將它們找出來
+    + 例：<pre><code>#git mv README README.md
+      #git status</code></pre>
+      
 #### 使用 GitHub 站台儲放程式碼
 #### 使用 MarkDown 語法
 #### 參考文獻
