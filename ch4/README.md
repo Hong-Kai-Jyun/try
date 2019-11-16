@@ -419,6 +419,27 @@
 
   + 圖片
     + Markdown使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式：行內和參考。
+    + 行內圖片的語法看起來像是：
+      ```md
+      ![Alt text](/path/to/img.jpg)
+      ![Alt text](/path/to/img.jpg "Optional title")
+    + 參考式的圖片語法則長得像這樣：
+      ```md
+      ![Alt text][id]
+      [id]: url/to/image  "Optional title attribute"
+    + Markdown還沒有辦法指定圖片的寬高，如果需要，可以使用普通的<img>標籤。
+
+  + 表格
+    + 表格不是核心 Markdown 規格的一部分，但可以使用管線 (|) 和連字號 (-) 字元來建立表格。
+    + 例：
+      ```md
+      | Fun                  | With                 | Tables          |
+      | :------------------- | -------------------: |:---------------:|
+      | left-aligned column  | right-aligned column | centered column |
+      | $100                 | $100                 | $100            |
+      | $10                  | $10                  | $10             |
+      | $1                   | $1                   | $1              |
+
 #### 參考文獻
 ##### MarkDown
 + [Markdown 語法說明](https://markdown.tw/#code)
