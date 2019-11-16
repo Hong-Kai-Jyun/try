@@ -298,20 +298,29 @@
   
       + **atx**:
         + Atx形式則是在行首插入1到6個 # ，各對應到標題1到6階，例如：
-          # This is heading 1
-          ## This is heading 2
-          ### This is heading 3
-          #### This is heading 4
-          + 以上範例原始碼如下：<pre><code># This is heading 1 ## This is heading 2 ### This is heading 3 #### This is heading 4
+          # This is heading 1  
+          ## This is heading 2  
+          ### This is heading 3  
+          #### This is heading 4  
+          + 以上範例原始碼如下：
+            <pre><code># This is heading 1
+            ## This is heading 2  
+            ### This is heading 3 
+            #### This is heading 4
           </code></pre>
         + 可以選擇性地「關閉」atx樣式的標題，只要行尾加上#，而行尾的#數量也不用和開頭一樣！
 
   + 區塊引言
-    + Markdown使用email形式的區塊引言
+    + Markdown 使用 email 形式的區塊引言
     + 例：
+  
       > This is a book.
-      這是引言！
-    + 
+      >> 這是引言！
+
+    + 上例原始碼: 
+      <pre><code>\> This is a book.
+      \>> 這是引言！
+      </code></pre>
   + 
 
 #### 參考文獻
