@@ -21,6 +21,7 @@
     ```html
     <!--我是注釋-->
     ```
+  + <font color="red">注意</font>：根據 HTML5的標準，HTML5文件可以略過 \<html\>、\<head\>、\<body\> 等標籤！
 + HTML主要結構:
     ```html
     <!DOCTYPE html>
@@ -89,7 +90,12 @@
             }
           </script>
           ```
-      6.  base:
+      6.  base: 指定該網頁上基本網頁的 url 位置
+        + 例：
+          ```html
+          <base href="https://www.w3schools.com/images/" target="_blank">
+          ```
+    + 
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
