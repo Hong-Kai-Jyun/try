@@ -341,6 +341,83 @@
     + 如果要在清單項目內放進引言，那 \> 就需要縮排
     + 如果要放程式碼區塊的話，該區塊就需要縮排兩次，也就是8個空白或是兩個tab
 
+  + 程式碼區塊
+    + Markdown會用\<pre\>和\<code\>標籤來把程式碼區塊包起來。
+      + 例：
+        ```php
+        <pre><code>
+        <?php 
+          print("Hello"); 
+        ?>
+        </code></pre>
+    + 一個程式碼區塊會一直持續到沒有縮排的那一行
+    + 在程式碼區塊裡面，\&、\<和\>會自動轉成HTML實體
+      + 這樣的方式讓使用者非常容易使用Markdown插入範例用的HTML原始碼，只需要複製貼上，再加上縮排就可以了
+    + 分隔線
+      + 可以在一行中用三個或以上的星號、減號、底線來建立一個分隔線，行內不能有其他東西。
+      + 例：
+        <pre><code>
+          \----------
+          \***********
+          \__________
+        </code></code>
+
++ 區段元素
+  + 連結
+    + Markdown支援兩種形式的連結語法：行內和參考兩種形式。
+    + 不管是哪一種，連結的文字都是用 [方括號] 來標記。
+      + 例如：
+        <pre><code>
+        his is [an example](http://example.com/ "Title") inline link.
+        [This link](http://example.net/) has no title attribute.
+        </code></pre>
+    + 參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號裡面要填入用以辨識連結的標籤：
+      <pre><code>
+        This is [an example][id] reference-style link.
+      </code></pre>
+      + 接著，在文件的任意處，可以把這個標籤的連結內容定義出來：
+        <pre><code>[id]: http://example.com/  "Optional Title Here"</code></pre>
+
+  + 強調
+    + Markdown使用星號（*）和底線（_）作為標記強調字詞的符號
+    + 被 \* 或 \_ 包圍的字詞會被轉成用\<em\>標籤包圍，用兩個 \* 或 \_ 包起來的話，則會被轉成\<strong\>
+  
+  + 程式碼片段
+    + 如果要標記一小段行內程式碼，可以用反引號把它包起來（`），例如：
+      <pre><code>Use the `printf()` function.
+      </code></pre>
+    + 如果是指定某一種程式語言，使用前三個倒引號 ('`') 字元之後的別名定義要使用的語法。例：
+      ```php
+      <?php 
+         print("Heelo");
+      ?>
+      ```
+      + 上例原始碼：
+        <pre><code>```php
+          <\?php 
+            printf("Heelo");
+          \?>
+          ```</code></pre>
+      + 支援的語法，簡略摘錄如下：
+        |Name	| Markdown 標籤|
+        |:---:|:---:|
+        |Bash |	bash|
+        |C++|cpp|
+        |Docker	|dockerfile|
+        |Go	|go|
+        |HTML	|html|
+        |HTTP	|http|
+        |Java	|java|
+        |JavaScript	|javascript|
+        |JSON	|json|
+        |Markdown	|md|
+        |PHP	|php|
+        |Python	|python|
+        |SQL	|sql|
+        |XML	|xml|
+
+  + 圖片
+    + Markdown使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式：行內和參考。
 #### 參考文獻
 ##### MarkDown
 + [Markdown 語法說明](https://markdown.tw/#code)
