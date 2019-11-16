@@ -60,6 +60,8 @@
             <meta charset="UTF-8">
             <meta name="description" content="網頁簡短描述">
             <meta name="keywords" content="網頁關鍵字">
+            <meta http-equiv="refresh" content="30">
+            <meta name="author" content="John Doe">
             ```
       3. link：連結資訊，其常用屬性有：
          1. rel ：通知瀏覽器相關資訊
@@ -69,9 +71,25 @@
             ```html
             <link rel="stylesheet" type="text/css" href="main.css"/>
             ```
-      4.  style: 定義樣式表
-      5.  script：
-      6.  
+      4.  style: 定義該網頁的樣式格式
+        + 例：
+          ```html
+          <style>
+            body {background-color: powderblue;}
+            h1 {color: red;}
+            p {color: blue;}
+            </style>
+          ```
+      5.  script：用來定義給客戶端執的 JavaScripts 檔案
+        + 例：
+          ```html
+          <script>
+            function myFunction {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+          </script>
+          ```
+      6.  base:
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
