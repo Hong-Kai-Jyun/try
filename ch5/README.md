@@ -95,10 +95,13 @@
           ```html
           <base href="https://www.w3schools.com/images/" target="_blank">
           ```
+  + Body 部份：網頁真正會展示給使用者看的內容
+    + 標題會有六種大小，從 \<h1\> ～ \<h6\>，預設字體大小為24pt ～ 8pt
     + 
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
 + [網頁基礎知識]（https://kknews.cc/code/2v4zarz.html）
-+ 
++ [HTML5常用基本標籤](https://kknews.cc/zh-tw/code/avqgrpg.html)
++ [HTML5 基礎語法](https://jerrylin.blog/code-93fdf7ed10d1)
