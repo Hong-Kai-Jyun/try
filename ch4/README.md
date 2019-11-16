@@ -239,6 +239,7 @@
       master merges with remote master
     Local ref configured for 'git push':
       master pushes to master (up to date)</code></pre>
+
 + 移除或重新命名遠端
   + 執行 **git remote rename** 來重新命名遠端的簡稱。
   + 例如：
@@ -253,6 +254,7 @@
   + 哲學
     + Markdown的目標是實現「易讀易寫」。
     + Markdown的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。
+  
   + 行內HTML
     + Markdown的語法有個主要的目的：用來作為一種網路內容的寫作用語言。
     + HTML 是一種發佈的格式，Markdown是一種編寫的格式！
@@ -261,6 +263,7 @@
     + Markdown語法在HTML區塊標籤中將不會被進行處理。
     + HTML的區段標籤如\<span\>、\<cite\>、\<del\>則不受限制，可以在Markdown的段落、清單或是標題裡任意使用。
     + HTML區段標籤和區塊標籤不同，在區段標籤的範圍內，Markdown的語法是有效的。
+  
   + 特殊字元自動轉換
     + 在HTML文件中，有兩個字元需要特殊處理：\< 和 \&。
     + \< 符號用於起始標籤， \&符號則用於標記HTML實體 :
@@ -268,11 +271,49 @@
     + Markdown允許直接使用這些符號，但是要小心跳脫字元「\」的使用
     + code範圍內，不論是行內還是區塊，\< 和 \& 兩個符號都一定會被轉換成HTML實體
     + 結論：在HTML語法中，你要把所有的 \< 和 \& 都轉換為 HTML 實體，才能 **「在 HTML 文件裡面寫出HTML code」**。
+  
 + 區塊元素
   + 段落和換行
     + 一個段落是由一個以上相連接的行句組成，而**一個以上的空行則會切分出不同的段落**，一般的段落不需要用空白或斷行縮排。
     + Markdown允許段落內的**強迫斷行，只要在行尾加上兩個以上的空白**，然後按「enter」。
+
+  + 標題
+    + Markdown支援兩種標題的語法，**Setext** 和 **atx** 形式。
+      + **Setext**:Setext形式是用底線的形式，利用=（最高階標題）和-（第二階標題）
+        + 例：
+
+          This is an H1
+          ============
+          This is an H2
+          -------------
+
+          + 上例原始碼：
+            <pre><code>
+            This is an H1
+            \============
+            This is an H2
+            \-------------
+            </code></pre>
+        +  任何數量的=和-都可以有效果。
+  
+      + **atx**:
+        + Atx形式則是在行首插入1到6個 # ，各對應到標題1到6階，例如：
+          # This is heading 1
+          ## This is heading 2
+          ### This is heading 3
+          #### This is heading 4
+          + 以上範例原始碼如下：<pre><code># This is heading 1 ## This is heading 2 ### This is heading 3 #### This is heading 4
+          </code></pre>
+        + 可以選擇性地「關閉」atx樣式的標題，只要行尾加上#，而行尾的#數量也不用和開頭一樣！
+
+  + 區塊引言
+    + Markdown使用email形式的區塊引言
+    + 例：
+      > This is a book.
+      這是引言！
+    + 
   + 
+
 #### 參考文獻
 ##### MarkDown
 + [Markdown 語法說明](https://markdown.tw/#code)
