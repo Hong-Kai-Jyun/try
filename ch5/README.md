@@ -47,19 +47,31 @@
       1. title ：瀏覽器標籤頁顯示的標題
       2. meta ：其常用屬性如下
          1. charset : 設置文檔的字符集編碼格式。
-            ```html
-            <meta charset="UTF-8">
-            ```
          2. http-equiv : 將資訊寫給瀏覽器看，要求瀏覽器執行，可選屬性值
             1. Content-Type：文件類型
             2. refresh：網頁定時刷新
             3. set-cookie：設置瀏覽器cookie，需要配合content屬性使用。http-equiv屬性只是表明需要設置哪一部分，具體的設置內容，放到content屬性中
-            4. name屬性：使用方法如同「http-equiv」。將資訊寫給搜尋引擎看！常用且需要掌握的屬性值：
+            4. name：使用方法如同「http-equiv」。將資訊寫給搜尋引擎看！常用且需要掌握的屬性值：
                1. author：作者
                2. keywords：網頁關鍵字
                3. description：網頁描述
-
-
+         3. 例：
+            ```html
+            <meta charset="UTF-8">
+            <meta name="description" content="網頁簡短描述">
+            <meta name="keywords" content="網頁關鍵字">
+            ```
+      3. link：連結資訊，其常用屬性有：
+         1. rel ：通知瀏覽器相關資訊
+         2. type ：可以是文字類型，或是其它類型
+         3. href ：表示連結路徑地址
+         4. 例：
+            ```html
+            <link rel="stylesheet" type="text/css" href="main.css"/>
+            ```
+      4.  style: 定義樣式表
+      5.  script：
+      6.  
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
