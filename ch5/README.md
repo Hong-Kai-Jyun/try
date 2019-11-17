@@ -236,6 +236,13 @@
     |\<video\>| Defines video or movie|
 
 #### CSS3 基本語法
++ CSS 概述
+  + 層疊樣式表（Cascading Style Sheets, CSS）是用來描述HTML 或XML（包含SVG 或XHTML 等各種XML 變形）文件外觀的樣式表語言。
+  + CSS 用來描述如何將HTML元素顯示在螢幕上、報表或是其它媒體上！
+  + CSS 可以讓多個 Web 網頁套用同一個層級樣式，節省許多排版工時！
+  + 許多額外的樣式可存放於 CSS 檔案中！
+
++ 
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
