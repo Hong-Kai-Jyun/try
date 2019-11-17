@@ -268,6 +268,38 @@
         a multi-line
         comment */
       ```
+
++ HTML 如何加入 CSS
+  + 共有三種方式，可在 HTML 中插入 CSS 
+    + 加入外部 CSS 檔案
+      + 在 \<head\> 標籤區塊內，加入\<link\>標籤屬性，宣告使用的檔案位置！
+      + 例：
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        </head>
+        <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+        ```
+        + mystyle.css 檔案內容 : 
+          ```html
+          body {
+            background-color: lightblue;
+          }
+
+          h1 {
+            color: navy;
+            margin-left: 20px;
+          }
+          ```
+    +  
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
