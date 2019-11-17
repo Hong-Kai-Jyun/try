@@ -273,6 +273,7 @@
   + 共有三種方式，可在 HTML 中插入 CSS 
     + 加入外部 CSS 檔案
       + 在 \<head\> 標籤區塊內，加入\<link\>標籤屬性，宣告使用的檔案位置！
+      + 可多個網頁共用一個 CSS 檔案！
       + 例：
         ```html
         <!DOCTYPE html>
@@ -299,7 +300,48 @@
             margin-left: 20px;
           }
           ```
-    +  
+    + HTML 內部設定 CSS 語法
+      + 針對單一網頁內容進行設定
+      + 在 \<head\> 標籤區塊內，將 CSS 設定語法寫入 \<style\> 區塊內！
+      + 例 :
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        body {
+          background-color: linen;
+        }
+
+        h1 {
+          color: maroon;
+          margin-left: 40px;
+        }
+        </style>
+        </head>
+        <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+        ``` 
+    + 內嵌至 HTML 語法標籤內
+      + 針對單一標籤進行外觀設定
+      + 例 :
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <p style="color:red;">This is a paragraph.</p>
+
+        </body>
+        </html>
+        ``` 
+    + 
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
