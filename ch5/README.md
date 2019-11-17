@@ -219,12 +219,14 @@
       + step
   
   + HTML5 新增繪圖標籤
+    
     |Tag|Description|
     |:---:|:---|
     |\<canvas\>|	Draw graphics, on the fly, via scripting (usually JavaScript)|
     |\<svg\>|	Draw scalable vector graphics|
 
   + HTML5 新增多媒體標籤
+    
     |Tag|Description|
     |:---:|:---|
     |\<audio\>|	Defines sound content|
