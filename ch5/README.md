@@ -181,11 +181,58 @@
   + HTML5 表格新增元素 :
 
   |Tag|Description|
-  |:---:|:---:|
+  |:---:|:---|
   |\<datalist\>|	Specifies a list of pre-defined options for input controls|
   |\<output\>|	Defines the result of a calculation|
 
-  + HTML5
+  + HTML5 新增可辨視輸入類型的種類 :
+    + 輸入類型分類：
+      + color
+      + date
+      + datetime
+      + datetime-local
+      + email
+      + month
+      + number
+      + range
+      + search
+      + tel
+      + time
+      + url
+      + week
+    + 輸入類型屬性 :
+      + autocomplete
+      + autofocus
+      + form
+      + formaction
+      + formenctype
+      + formmethod
+      + formnovalidate
+      + formtarget
+      + height and width
+      + list
+      + min and max
+      + multiple
+      + pattern (regexp)
+      + placeholder
+      + required
+      + step
+  
+  + HTML5 新增繪圖標籤
+    |Tag|Description|
+    |:---:|:---|
+    |\<canvas\>|	Draw graphics, on the fly, via scripting (usually JavaScript)|
+    |\<svg\>|	Draw scalable vector graphics|
+
+  + HTML5 新增多媒體標籤
+    |Tag|Description|
+    |:---:|:---|
+    |\<audio\>|	Defines sound content|
+    |\<embed\>|	Defines a container for an external (non-HTML) application|
+    |\<source\>| Defines multiple media resources for media elements (\<video\> and \<audio\>)|
+    |\<track\>|	Defines text tracks for media elements (\<video\> and \<audio\>)|
+    |\<video\>| Defines video or movie|
+
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
