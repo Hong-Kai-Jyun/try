@@ -96,7 +96,28 @@
           <base href="https://www.w3schools.com/images/" target="_blank">
           ```
   + Body 部份：網頁真正會展示給使用者看的內容
-    + 標題會有六種大小，從 \<h1\> ～ \<h6\>，預設字體大小為24pt ～ 8pt
+    + 標題 : 有六種大小，從 \<h1\> ～ \<h6\>，預設字體大小為24pt ～ 8pt
+      + 例：
+        ```html
+        <h1>I'm headline 1</h1>
+        <h2>I'm headline 2</h2>
+        <h3>I'm headline 3</h3>
+        <h4>I'm headline 4</h4>
+        <h5>I'm headline 5</h5>
+        <h6>I'm headline 6</h6>
+        ```
+    + 段落：\<p\>\<\p>
+      + 例：
+        ```html
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        ```
+    + 超連結：\<a\>\<\a\>
+      + 例：
+        ```html
+        <a href="https://www.google.com">google</a>
+        ```
+      + href : 指定目的地網址名稱
     + 
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
