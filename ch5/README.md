@@ -97,7 +97,7 @@
           ```
   + Body 部份：網頁真正會展示給使用者看的內容
     + 標題 : 有六種大小，從 \<h1\> ～ \<h6\>，預設字體大小為24pt ～ 8pt
-      + 例：
+      + 例 :
         ```html
         <h1>I'm headline 1</h1>
         <h2>I'm headline 2</h2>
@@ -106,19 +106,29 @@
         <h5>I'm headline 5</h5>
         <h6>I'm headline 6</h6>
         ```
-    + 段落：\<p\>\<\p>
-      + 例：
+    + 段落 : \<p\>\</p\>
+      + 例 :
         ```html
         <p>This is a paragraph.</p>
         <p>This is another paragraph.</p>
         ```
-    + 超連結：\<a\>\<\a\>
-      + 例：
+    + 超連結 : \<a\>\</a\>
+      + 例 :
         ```html
         <a href="https://www.google.com">google</a>
         ```
       + href : 指定目的地網址名稱
-    + 
+    + 圖片連結設定：\<img\>\</img\>
+      + 例 :
+        ```html
+        <img src="img/test1.jpg" alt="Hello World" width="104" height="142">美女圖</img>
+        ```
+      + src : 指定圖檔路徑
+      + alt : 圖檔說明文字
+      + width : 圖檔顯示的寬度
+      + height : 圖檔顯示的高度
+    + 按鍵 : \<button\>\</button\>
+      + 例：
 #### CSS3 基本語法
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
