@@ -241,7 +241,33 @@
   + CSS 可以讓多個 Web 網頁套用同一個層級樣式，節省許多排版工時！
   + 許多額外的樣式可存放於 CSS 檔案中！
 
-+ 
++ CSS 語法格式定義
+  + CSS 語法格式中，分成選擇器與宣告兩部份 :
+    ![CSS 語法組成格式圖](img/1.gif)
+    + Selector : 通常是 HTML 標籤名稱，可加上屬性名稱，做更仔細的設定！
+    + Declaration : 定義屬性值，做外觀的變化設定！
+      + 每個宣告設定語法結尾，使用分號做結尾！　
+    + 例 : 定義段落標籤\<p\>文字顏色以及位置置中！
+      ```html
+      p {
+        color: red;
+        text-align: center;
+      }
+      ```
+  + CSS 的註解
+    + 多數用來說明語法，瀏覽器在解析語法時會略過
+    + 例 :
+      ```html
+      p {
+          color: red;
+          /* This is a single-line comment */
+          text-align: center;
+        }
+
+        /* This is
+        a multi-line
+        comment */
+      ```
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
