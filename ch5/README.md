@@ -535,7 +535,4 @@
     </div>
     ```
 #### 參考文獻
-+ [W3 School](https://www.w3schools.com/) 
-+ [網頁基礎知識](https://kknews.cc/code/2v4zarz.html）
-+ [HTML5常用基本標籤](https://kknews.cc/zh-tw/code/avqgrpg.html)
-+ [HTML5 基礎語法](https://jerrylin.blog/code-93fdf7ed10d1)
++ [W3 School](https://www.w3schools.com/)
