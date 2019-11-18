@@ -493,7 +493,13 @@
         </body>
       </html>
     ```
-  + 
++ Bootstrap 網格的概念
+  + Bootstrap 將一整個網頁寬度，使用最多的 12 個網格！
+    + 如果不想要使用到 12 個網格，可以將網格合併！
+    + 例 :
+      
+    ![12網格](img/2.png)
+    + 
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
 + [網頁基礎知識](https://kknews.cc/code/2v4zarz.html）
