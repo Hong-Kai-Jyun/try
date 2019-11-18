@@ -499,6 +499,41 @@
     + 例 :
       ![12網格](img/2.png)
     + 網格將會依據螢幕大小，按比例縮放！
+  + Bootstrap 網格系統的類型共有五種 :
+    + .col- (最小的平台，螢幕寬度低於 576px)
+    + .col-sm- (小型平台，螢幕寬度大於等於 576px)
+    + .col-md- (中型平台，螢幕寬度大於等於 768px)
+    + .col-lg- (大型平台，螢幕寬度大於等於 992px)
+    + .col-xl- (超大型平台，螢幕寬度大於等於 1200px)
+    + PS : 螢幕寬度低於設定的 px 值，將會互相自動堆疊
+  + 例 : 
+    ```html
+    <!-- 第一個「*」號代表任一類型 -->
+    <!-- 第二個「*」號代表均分網格 -->
+    <div class="row">
+      <div class="col-*-*"></div>
+      <div class="col-*-*"></div>
+    </div>
+    <div class="row">
+      <div class="col-*-*"></div>
+      <div class="col-*-*"></div>
+      <div class="col-*-*"></div>
+    </div>
+    <!-- 讓 Bootstrap 自動處理佈局 -->
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    ```
+  + 可以設定不等分的網格 :
+  + 例：
+    ```html
+    <div class="row">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-8">.col-sm-8</div>
+    </div>
+    ```
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
 + [網頁基礎知識](https://kknews.cc/code/2v4zarz.html）
