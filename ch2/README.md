@@ -256,32 +256,32 @@
     <pre><code>#systemctl enable --now php-fpm</code></pre>
   + 修改 nginx 內的設定，將 /etc/nginx/nginx.conf 的 Server 區段註解
   + 新增 /etc/nginx/conf.d/default.conf 內容如下：
-  ```md
-  #vim /etc/nginx/conf.d/default.conf
-  server {
-    listen       80 default_server;
-    listen       [::]:80 default_server;
-    server_name  _;
-    root         /usr/share/nginx/html;
-    location / {
-      index index.php index.html;
+    ```md
+    #vim /etc/nginx/conf.d/default.conf
+    server {
+      listen       80 default_server;
+      listen       [::]:80 default_server;
+      server_name  _;
+      root         /usr/share/nginx/html;
+      location / {
+        index index.php index.html;
+      }
+      location ~ \.php$ {
+        root           /usr/share/nginx/html;
+        try_files $uri = 404;
+        fastcgi_pass unix:/var/opt/remi/php73/run/php-fpm/php-fpm.sock;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        /etc/nginx/fastcgi_params;
+      }
+      error_page 404 /404.html;
+          location = /40x.html {
+      }
+      error_page 500 502 503 504 /50x.html;
+          location = /50x.html {
+      }
     }
-    location ~ \.php$ {
-      root           /usr/share/nginx/html;
-      try_files $uri = 404;
-      fastcgi_pass unix:/var/opt/remi/php73/run/php-fpm/php-fpm.sock;
-      fastcgi_index  index.php;
-      fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-      include        /etc/nginx/fastcgi_params;
-    }
-    error_page 404 /404.html;
-        location = /40x.html {
-    }
-    error_page 500 502 503 504 /50x.html;
-        location = /50x.html {
-    }
-  }
-  ```
+    ```
   + 重新啟動 nginx 
     <pre><code>#systemctl restart nginx</code></pre>
   + 佈署網頁至 nginx 網站
