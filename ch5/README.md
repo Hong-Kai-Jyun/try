@@ -341,7 +341,32 @@
         </body>
         </html>
         ``` 
-    + 
+  + CSS 的串列順序
+    + CSS 執行順序，從最高到最低 :
+      1. 內嵌至 HTML 語法標籤內的 CSS 樣式
+      2. HTML 內部設定的 CSS 語法
+      3. 外部加入的 CSS 檔案
+    + PS: 第 2 點與第 3 點的設定順序，在後的設定會覆寫之前的設定，例：
+      ```html
+      <head>
+      <style>
+      h1 {
+        color: orange;
+      }
+      </style>
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+      </head>
+      ```
+      ----------------------
+      ```html
+      mystyle.css 檔案內容：
+      h1 {
+        color: navy;
+      }
+      ```
+      + 後來的 \<h1\> 標籤，文字顏色將是 "orange" !!
++ CSS 的 Selector 類型 :
+  + 
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
