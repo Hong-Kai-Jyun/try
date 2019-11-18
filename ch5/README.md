@@ -366,7 +366,81 @@
       ```
       + 後來的 \<h1\> 標籤，文字顏色將是 "orange" !!
 + CSS 的 Selector 類型 :
-  + 
+  + 基於標籤名稱的 Selector ，例如 \<p\> :
+    ```html
+    p {
+      text-align: center;
+      color: red;
+    }
+    ```
+  + 基於 HTML 標籤內元素名稱 id 屬性值的 Selector , 例如 \<h1 id="para1"\> :
+    ```html
+    #para1 {
+      text-align: center;
+      color: red;
+    }
+    ```
+    + HTML 標籤的 id 值，都是唯一值！
+  + 基於 HTML 標籤內元素名稱 class 屬性值的 Selector , 例如 \<p class="center"\> : 
+    ```html
+    .center {
+      text-align: center;
+      color: red;
+    }
+    ```
+    + 不同標籤值，可以使用相同的類別屬性！
+  + 同時指定標籤名稱與元素 id 值的 Selector , 例如 \<p id="center"\> :
+    ```html
+    p.center {
+      text-align: center;
+      color: red;
+    }
+    ```
+  + 同時指定標籤名稱與多個元素 id 值的 Selector，例如 \<p id="center large"\> :
+    ```html
+    p.center {
+      text-align: center;
+      color: red;
+    }
+
+    p.large {
+      font-size: 300%;
+    }
+    ``` 
+  + 通用 Selector :
+    + 表示所有標籤均使用的 Selector !
+      ```html
+      * {
+        text-align: center;
+        color: blue;
+      }
+      ```
+  + 群組標籤 Selector :
+    + 將某些標籤一起定義格式的作法　！
+      ```html
+      h1 {
+        text-align: center;
+        color: red;
+      }
+
+      h2 {
+        text-align: center;
+        color: red;
+      }
+
+      p {
+        text-align: center;
+        color: red;
+      }
+      ```
+      可以改成如下做法：
+      ```html
+      h1, h2, p {
+        text-align: center;
+        color: red;
+      }
+      ```
+
 #### Bootstrap 4 框架基本語法
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/) 
