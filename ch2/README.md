@@ -255,7 +255,9 @@
   + 啟動 php-fpm 套件
     <pre><code>#systemctl enable --now php-fpm</code></pre>
   + 修改 nginx 內的設定，將 /etc/nginx/nginx.conf 的 Server 區段註解
-  + 新增 /etc/nginx/conf.d/default.conf 內容如下：<pre><code>#vim /etc/nginx/conf.d/default.conf
+  + 新增 /etc/nginx/conf.d/default.conf 內容如下：
+  ```md
+  #vim /etc/nginx/conf.d/default.conf
   server {
     listen       80 default_server;
     listen       [::]:80 default_server;
@@ -279,7 +281,7 @@
         location = /50x.html {
     }
   }
-    </code></pre>
+  ```
   + 重新啟動 nginx 
     <pre><code>#systemctl restart nginx</code></pre>
   + 佈署網頁至 nginx 網站
