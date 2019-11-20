@@ -246,7 +246,8 @@
   + 使用 YUM 進行安裝
     <pre><code>#yum install nginx
     #systemctl enable --now nginx
-    #firewall-cmd --add-service=http</code></pre>
+    #firewall-cmd --add-service=http
+    #firewall-cmd --runtime-to-permanent</code></pre>
   + 利用瀏覽器查看一下站台預設網頁是否開啟
 + PHP 套件安裝與啟用
   + 使用 YUM 進行安裝
