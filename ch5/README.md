@@ -535,6 +535,16 @@
     </div>
     ```
 
+#### VS Code Extensions 安裝提示
++ 由 Extensions 安裝 VS Code 外掛軟體
+  + [工具列] -> [View] -> [Extensions]
+  + [左方工具列] -> [Extensions] 圖示（看起來有四個方塊的圖案）
++ HTML ＆ CSS 推薦外掛套件
+  + HTML Snippets
+  + HTML CSS Support
+  + IntelliSense for CSS class names in HTML
+  + JS-CSS-HTML Formatter
+
 #### 參考文獻
 + [W3 School](https://www.w3schools.com/)
 + [Bootstrap 4繁體中文手冊](https://bootstrap.hexschool.com/docs/4.2/getting-started/introduction/)

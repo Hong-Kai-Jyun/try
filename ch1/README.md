@@ -54,4 +54,7 @@
 
 #### 參考文獻
 ##### Visual Studio Code
++ [VS Code 官網](https://code.visualstudio.com/)
 + [安裝/設定 Visual Studio Code 編輯器](https://ithelp.ithome.com.tw/articles/10195139?sc=iThelpR)
++ [推薦的 VS Code Extensions 整理](https://medium.com/itsoktomakemistakes/vs-code-extensions-a453e5d1e926)
++ [Visual Studio Code 必裝擴充套件（Extensions）](https://blog.goodjack.tw/2018/03/visual-studio-code-extensions.html#markdown-%E7%9B%B8%E9%97%9C)

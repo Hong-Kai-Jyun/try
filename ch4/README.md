@@ -448,3 +448,4 @@
 + [Git 官網說明](https://git-scm.com/book/zh-tw/v2)
   + [舊版的官網](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B)
 + [開始程式碼版控](https://ithelp.ithome.com.tw/articles/10202278)
++ [為自己學 Git](https://gitbook.tw/)
