@@ -5,7 +5,7 @@
     <pre><code>#yum install mysql mysql-server
     </code></pre>
   + 修改設定檔 /etc/my.cnf.d/my.cnf
-    <pre><code>#vim /etc/my.cnf.d/my.cnf
+    <pre><code>#nano /etc/my.cnf.d/my.cnf
     [mysqld]
     default-authentication-plugin=mysql_native_password</code></pre>
   + 啟動 MySQL 服務，並修改預設密碼
@@ -27,7 +27,7 @@
   + 修改 phpMyAdmin 設定檔
     <pre><code>#cd phpMyAdmin
     #cp config.sample.inc.php config.inc.php
-    #vim config.inc.php
+    #nano config.inc.php
     $cfg['blowfish_secret'] = md5($srcret_string.date("Ymd",time()));
     </code></pre>
   + 打開瀏覽器，以 root 身份登入！
