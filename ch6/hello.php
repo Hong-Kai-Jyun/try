@@ -1,27 +1,4 @@
-### 第六章 PHP 基本語法
-#### PHP 基本觀念
-+ 站台的運作方式
-  + 靜態網站
-    ![靜態網站](img/1.gif)
-    + 取自「鳥哥的私房菜」
-  + 動態網站
-    ![動態網站](img/2.jpeg)
-    + 取自「鳥哥的私房菜」
-
-+ PHP 的運作方式
-  + PHP Engine
-    ![PHP運作概要圖](img/4.jpeg)
-
-+ PHP 程式寫作方式
-  + 程式標籤 :
-    ```php
-    <?php
-      你的 php 程式碼;
-    ?>
-    ```
-  + 範例 : hello.php
-    ```html
-    <!doctype html>
+<!doctype html>
     <html lang="en">
       <head>
         <title>Hello World</title>
@@ -43,8 +20,3 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       </body>
     </html>
-    ```
-#### 變數與資料型態
-#### 運算子
-#### 參考文獻
-+ [鳥哥的私房菜](http://dic.vbird.tw/linux_server/unit10.php)
