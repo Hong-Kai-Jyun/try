@@ -255,7 +255,7 @@
   + 檢查 php-fpm 設定檔內容，通常是 www.conf :
     ```md
     (只需修改需要的部份，其他的設定項目保留原狀)
-    #nano /etc/opt/php73/php-fpm.d/www.conf
+    #nano /etc/php-fpm.d/www.conf
       user = nginx
       group = nginx
       listen = /run/php-fpm/www.sock

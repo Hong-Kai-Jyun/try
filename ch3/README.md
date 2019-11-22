@@ -4,8 +4,8 @@
   + 利用 YUM 進行安裝
     <pre><code>#yum install mysql mysql-server
     </code></pre>
-  + 修改設定檔 /etc/my.cnf
-    <pre><code>#vim /etc/my.cnf
+  + 修改設定檔 /etc/my.cnf.d/my.cnf
+    <pre><code>#vim /etc/my.cnf.d/my.cnf
     [mysqld]
     default-authentication-plugin=mysql_native_password</code></pre>
   + 啟動 MySQL 服務，並修改預設密碼
