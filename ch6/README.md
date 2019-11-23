@@ -33,7 +33,7 @@
         </body>
       </html>
       ```
-      
+
     + 你的練習 : 請練習好下列步驟，以後章節將不會重複再說明！
       + 使用 VS Code 軟體
       + 使用 [View] -> [Extensions] -> 輸入[HTML] -> 確認是否安裝 [HTML Snippets]
@@ -46,8 +46,13 @@
         + 將檔案存檔
       + 將存好的檔案，使用 git 存好，並推上 github !
       + 進入你的正式環境內，將 github 的專案，克隆回你的主機！
+        + 以 root 身份登入你的 Linux 主機
+        + 切換至 /usr/share/nginx/html 目錄
+          <pre><code>#cd /usr/share/nginx/html
+          #git clone https://github.com/你的帳號名稱/你的專案名稱.git</code></pre>
       + 打開你的網頁，查看檔案是否有執行！
-  
+        + 請注意你的網址路徑是否正確
+
   + PHP 包含 HTML 標籤
     + 範例 : world.php
       ```php
