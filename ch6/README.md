@@ -76,6 +76,7 @@
   + PHP 基本輸出
     + 使用 echo 
     + 使用 print
+    + 使用 printf() 函數
     + 例 : ex6_1.php
       ```php
       <?php
@@ -83,12 +84,32 @@
         echo 'World <br />';
         print "Hello2 <br />";
         print 'World2 <br />';
+        printf("Hello World");
       ?>
       ```
 
   + PHP 的註解
+    + 單行註解 : //
+    + 區塊註解 : /*  */
+    + 功能 :
+      + 說明程式功能
+      + 不執行程式
+      + 其它
+    + 範例 : ex6_2.php
+      ```php
+      <?php
+        echo "你愛他 <br />";
+        // echo '真的嗎？ <br />';
+        print "他不愛你 <br />";
+        /* 以下是猜的
+        print '他有外遇 <br />';
+        printf("你有外遇");
+        */
+      ?>
+      ```
+
 #### 變數與資料型態
-####
+
 #### 運算子
 #### 參考文獻
 + [鳥哥的私房菜](http://dic.vbird.tw/linux_server/unit10.php)
