@@ -24,14 +24,139 @@
 <img src="img/4.jpeg" alt="PHP運作概要圖"></li>
 </ul>
 </li>
+<li>
+<p>PHP 程式寫作方式</p>
+<ul>
+<li>
+<p>HTML 內嵌 PHP 程式標籤 :</p>
+<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
+  你的 php 程式碼;
+<span class="hljs-preprocessor">?&gt;</span></code></pre>
+<ul>
+<li>
+<p>範例 : hello.php</p>
+<pre><code class="language-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+      <span class="php"><span class="hljs-preprocessor">&lt;?php</span>
+        <span class="hljs-keyword">print</span> <span class="hljs-string">"Hello World"</span>;
+      <span class="hljs-preprocessor">?&gt;</span></span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+</li>
+<li>
+<p>你的練習 : 請練習好下列步驟，以後章節將不會重複再說明！</p>
+<ul>
+<li>使用 VS Code 軟體</li>
+<li>使用 [View] -&gt; [Extensions] -&gt; 輸入[HTML] -&gt; 確認是否安裝 [HTML Snippets]</li>
+<li>開新檔案，存檔成 hello.php !
+<ul>
+<li>做法 [File] -&gt; [Save As…] -&gt; 選擇資料夾 -&gt; 輸入檔名</li>
+</ul>
+</li>
+<li>在 hello.php 頁籤中，實作 hello.php 內容
+<ul>
+<li>選擇 hello.php 頁籤</li>
+<li>直接輸入 html ，在輔助視窗中，選擇 html:5</li>
+<li>在&lt;body&gt;標籤底下輸入範例內容！</li>
+<li>將檔案存檔</li>
+</ul>
+</li>
+<li>將存好的檔案，使用 git 存好，並推上 github !</li>
+<li>進入你的正式環境內，將 github 的專案，克隆回你的主機！
+<ul>
+<li>以 root 身份登入你的 Linux 主機</li>
+<li>切換至 /usr/share/nginx/html 目錄<pre><code>#cd /usr/share/nginx/html
+#git clone https://github.com/你的帳號名稱/你的專案名稱.git</code></pre>
+</li>
+</ul>
+</li>
+<li>打開你的網頁，查看檔案是否有執行！
+<ul>
+<li>請注意你的網址路徑是否正確</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>PHP 包含 HTML 標籤</p>
+<ul>
+<li>範例 : world.php<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">print</span> <span class="hljs-string">&lt;&lt;&lt;_HTML_
+    &lt;form method="post" action="<span class="hljs-subst">$_SERVER</span>[PHP_SELF]"&gt;
+    Your Name:&lt;input type="text" name="user" /&gt;
+    &lt;br/&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Say World&lt;/button&gt;
+    &lt;/form&gt;
+_HTML_;</span>
+<span class="hljs-preprocessor">?&gt;</span></code></pre>
+</li>
+<li>範例 : world1.php<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"&lt;h5&gt;test&lt;/h5&gt;"</span>;
+<span class="hljs-preprocessor">?&gt;</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>PHP 基本輸出</p>
+<ul>
+<li>使用 echo</li>
+<li>使用 print</li>
+<li>使用 printf() 函數</li>
+<li>例 : ex6_1.php<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello &lt;br /&gt;"</span>;
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">'World &lt;br /&gt;'</span>;
+  <span class="hljs-keyword">print</span> <span class="hljs-string">"Hello2 &lt;br /&gt;"</span>;
+  <span class="hljs-keyword">print</span> <span class="hljs-string">'World2 &lt;br /&gt;'</span>;
+  printf(<span class="hljs-string">"Hello World"</span>);
+<span class="hljs-preprocessor">?&gt;</span></code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>PHP 的註解</p>
+<ul>
+<li>單行註解 : //</li>
+<li>區塊註解 : /*  */</li>
+<li>功能 :
+<ul>
+<li>說明程式功能</li>
+<li>不執行程式</li>
+<li>其它</li>
+</ul>
+</li>
+<li>範例 : ex6_2.php<pre><code class="language-php"><span class="hljs-preprocessor">&lt;?php</span>
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"你愛他 &lt;br /&gt;"</span>;
+  <span class="hljs-comment">// echo '真的嗎？ &lt;br /&gt;';</span>
+  <span class="hljs-keyword">print</span> <span class="hljs-string">"他不愛你 &lt;br /&gt;"</span>;
+  <span class="hljs-comment">/* 以下是猜的
+  print '他有外遇 &lt;br /&gt;';
+  printf("你有外遇");
+  */</span>
+<span class="hljs-preprocessor">?&gt;</span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h4 id="header-變數與資料型態">變數與資料型態 <a class="permalink" href="#header-變數與資料型態" aria-hidden="true">¶</a></h4>
 <h4 id="header-運算子">運算子 <a class="permalink" href="#header-運算子" aria-hidden="true">¶</a></h4>
 <h4 id="header-參考文獻">參考文獻 <a class="permalink" href="#header-參考文獻" aria-hidden="true">¶</a></h4>
 <ul>
-<li><a href="http://dic.vbird.tw/linux_server/unit10.php">鳥哥的私房菜</a></li>
+<li>
+<p><a href="http://dic.vbird.tw/linux_server/unit10.php">鳥哥的私房菜</a></p>
+</li>
+<li>
+<p><a href="https://www.php.net/">PHP 官網</a></p>
+</li>
 </ul>
-</div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 21 Nov 2019</p><script>/* eslint-env browser */
+</div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 23 Nov 2019</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 
