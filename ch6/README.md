@@ -25,25 +25,29 @@
       <html lang="en">
         <head>
           <title>Hello World</title>
-          <!-- Required meta tags -->
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-          <!-- Bootstrap CSS -->
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         </head>
         <body>
             <?php
               print "Hello World";
             ?>
-          <!-- Optional JavaScript -->
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         </body>
       </html>
       ```
+      
+    + 你的練習 : 請練習好下列步驟，以後章節將不會重複再說明！
+      + 使用 VS Code 軟體
+      + 使用 [View] -> [Extensions] -> 輸入[HTML] -> 確認是否安裝 [HTML Snippets]
+      + 開新檔案，存檔成 hello.php ! 
+        + 做法 [File] -> [Save As...] -> 選擇資料夾 -> 輸入檔名
+      + 在 hello.php 頁籤中，實作 hello.php 內容
+        + 選擇 hello.php 頁籤
+        + 直接輸入 html ，在輔助視窗中，選擇 html:5
+        + 在\<body\>標籤底下輸入範例內容！
+        + 將檔案存檔
+      + 將存好的檔案，使用 git 存好，並推上 github !
+      + 進入你的正式環境內，將 github 的專案，克隆回你的主機！
+      + 打開你的網頁，查看檔案是否有執行！
+  
   + PHP 包含 HTML 標籤
     + 範例 : world.php
       ```php
