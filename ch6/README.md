@@ -109,7 +109,8 @@
       ```
 
 #### 變數與資料型態
-+ 變數 : 利用一個名稱，暫時記錄某些資料。
++ 變數 
+  + 定義 : 利用一個名稱，暫時記錄某些資料。
   + 命名規則 :　$<變數名稱> 
     + 以 $ 為開頭
     + 變數名稱開頭字元為字母或底線，不能是數字！
@@ -122,19 +123,48 @@
       + 字串 : 空字串
       + 布林值 : false
       + 陣列 : 空陣列
-+ 例 : ex6_3.php
-  ```php
-  <?php
-      // 變數 a 沒宣告就使用,會產生 E_NOTICE 的警告
-      echo '$a: '.$a.'<be />';
-      $name = 100;
-      echo '$name: '.$name.'<be />';
-      $name = 'David';
-      echo '$name: '.$name.'<be />';
-      $a = $a + 100;
-      echo '$a: '.$a.'<be />';
-  ?>
-  ```
+  + 例 : ex6_3.php
+    ```php
+    <?php
+        // 變數 a 沒宣告就使用,會產生 E_NOTICE 的警告
+        echo '$a: '.$a.'<be />';
+        $name = 100;
+        echo '$name: '.$name.'<be />';
+        $name = 'David';
+        echo '$name: '.$name.'<be />';
+        $a = $a + 100;
+        echo '$a: '.$a.'<be />';
+    ?>
+    ```
++ 變數的存活範圍
+  + 區域變數 : 變數的內容值只能在函數(function)內使用
+  + 全域變數 : 變數的內容值可在整個程式內使用
+  + 例 : ex6_4.php
+    ```php
+    <?php
+      $x = 1;
+      function hello($x){
+        $sum = $x * 2;
+        echo "函數執行結束 <br />";
+      }
+    ?>
+    <p> -------我是分隔線------</p>
+    <?php
+      hello($x);
+      echo "x=$x<br />";
+      echo "sum=$sum<br />";
+    ?>
+    ```
++ 常數
+  + 常使用，但永不改變的數值
+  + 利用 define 函數定義常數名稱，方便記憶
+  + 例 : ex6_5.php
+    ```php
+    <?php
+      define('PI', 3.1415926);
+      echo "圓周率：".PI;
+    ?>
+    ```
 #### 運算子
 #### 參考文獻
 + [鳥哥的私房菜](http://dic.vbird.tw/linux_server/unit10.php)
