@@ -16,9 +16,9 @@
   </head>
   <body>
   
-<div class="nav navbar-default"><!-- style="width:30%"navbar-fixed-bottom-->
+<div class="nav navbar-default col-xs-12"><!-- style="width:30%"navbar-fixed-bottom-->
     <tr class="nav navbar-nav navbar-right">
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
@@ -26,7 +26,7 @@
         </ul>
       </td>
 	  
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
@@ -34,7 +34,7 @@
         </ul>
       </td>
 	  
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">客戶訂單<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">客戶訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
@@ -42,7 +42,7 @@
         </ul>
       </td>
 
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">顧客管理<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">顧客管理</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
@@ -50,7 +50,7 @@
         </ul>
       </td>
 
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">供應商管理<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">供應商管理</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
