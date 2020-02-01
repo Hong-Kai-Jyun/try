@@ -12,7 +12,8 @@
   </head>
   <body>
   
-<div class="nav navbar-default navbar-fixed-bottom "><!-- style="width:30%"-->
+<div class="nav navbar-default  "><!-- style="width:30%"navbar-fixed-bottom-->
+  <div class="col-xs-6"><!---->
 
   <ul class="nav nav-tabs">
 
@@ -35,6 +36,7 @@
     </ul>
     
   </ul>
+ </div>
 </div>
 
 
