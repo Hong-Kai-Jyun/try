@@ -18,34 +18,34 @@
   
 <div class="nav navbar-default col-xs-12"><!-- style="width:30%"navbar-fixed-bottom-->
     <tr class="nav navbar-nav navbar-right nav-tabs">
-      <ul class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">我的訂單</a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">我的訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </ul>
+      </li>
 	  
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >庫存</a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >庫存</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </td>
+      </li>
 	  
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >客戶訂單</a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >客戶訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </td>
+      </li>
 
     <li><a data-toggle="tab" href="#menu2">顧客管理</a></li>
     <li><a data-toggle="tab" href="#menu2">供應商管理</a></li>
 	
-       <li class="dropdown"><a class="dropdown-toggle " data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+       <li class="dropdown"><a class="dropdown-toggle " data-toggle="dropdown" href="#">Dropdown</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
