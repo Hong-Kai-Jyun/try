@@ -18,50 +18,50 @@
   
 <div class="nav navbar-default"><!-- style="width:30%"navbar-fixed-bottom-->
     <tr class="nav navbar-nav navbar-right">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>
+      </td>
 	  
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>
+      </td>
 	  
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">客戶訂單<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">客戶訂單<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>
+      </td>
 
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">顧客管理<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">顧客管理<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>
+      </td>
 
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">供應商管理<span class="caret"></span></a>
+      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">供應商管理<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>
+      </td>
 	  
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
-    </tr>
+    </td>
     
 </div>
 
