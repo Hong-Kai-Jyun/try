@@ -41,17 +41,24 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
-
-    <li><a data-toggle="tab" href="#menu2">顧客管理</a></li>
-    <li><a data-toggle="tab" href="#menu2">供應商管理</a></li>
-	
-       <li class="dropdown"><a class="dropdown-toggle " data-toggle="dropdown" href="#">Dropdown</a>
+	  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >顧客管理</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </li>	  
+      </li>
+	  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >供應商管理</a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+
+	  
 	  <!--
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
