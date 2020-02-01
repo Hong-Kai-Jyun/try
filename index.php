@@ -16,8 +16,8 @@
   </head>
   <body>
   
-<div class="nav navbar-default col-x-6"><!-- style="width:30%"navbar-fixed-bottom-->
-    <div class="col-sm">
+<div class="nav navbar-default col-sm-auto"><!-- style="width:30%"navbar-fixed-bottom-->
+    <div class="nav navbar-default col-sm">
     <li><a data-toggle="tab" href="#menu2">首頁</a></li>
 	</div>
 	
