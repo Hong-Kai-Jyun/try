@@ -58,10 +58,12 @@
         </ul>
       </td>
 	  
+	  <!--
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
-    </td>
+      -->    
+	</tr>
     
 </div>
 
