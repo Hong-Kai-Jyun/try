@@ -17,7 +17,7 @@
   <body>
   
 <div class="nav navbar-default"><!-- style="width:30%"navbar-fixed-bottom-->
-    <ul class="nav navbar-nav navbar-right">
+    <tr class="nav navbar-nav navbar-right">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單<span class="caret"></span></a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
@@ -61,7 +61,7 @@
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
-    </ul>
+    </tr>
     
 </div>
 
