@@ -11,7 +11,37 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+<div class="nav navbar-default navbar-fixed-bottom "><!-- style="width:30%"-->
+  <div class="col-xs-6"><!---->
+
+  <ul class="nav nav-tabs">
+
+    <li><a data-toggle="tab" href="#home">紅茶系列</a></li>
+    <li><a data-toggle="tab" href="#menu1">冬瓜系列</a></li>
+    <li><a data-toggle="tab" href="#menu2">仙草系列</a></li>
+
+
+  <li><a data-toggle="tab" href=" #<?php echo $row[ 'class_id'];?> ">  <?php echo $row['class_name']; }//foreach結束 ?> </a></li> 
+
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle " data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+
+       <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+       <li><a data-toggle="tab" href="#">Log out</a></li>
+       <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+    </ul>
+    
+  </ul>
+ </div>
+</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
