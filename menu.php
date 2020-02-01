@@ -20,7 +20,6 @@
 
 <body>
 <div class="nav navbar-default"><!-- style="width:30%"-->
- <div class="col-xs-6"><!--左邊菜單開始的div-->
 
   <ul class="nav nav-tabs">
     <li><a data-toggle="tab" href="#home">紅茶系列</a></li>
@@ -78,8 +77,6 @@
        <p>特濃麥茶牛奶</p>
      </div>
   </div>
-  
- </div><!--左邊菜單結束的div-->
 
 </div>
 
