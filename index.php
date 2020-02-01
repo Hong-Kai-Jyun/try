@@ -7,20 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"><!--匯入bootstrap-->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--匯入jQuery-->
- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><!--匯入bootstrap javascript-->
-    <title>Hello, world!</title>
+
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"><!--匯入bootstrap-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--匯入jQuery-->
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><!--匯入bootstrap javascript-->
+    
+	<title>Hello, world!</title>
   </head>
   <body>
   
 <div class="nav navbar-default"><!-- style="width:30%"navbar-fixed-bottom-->
   <ul class="nav nav-tabs">
-
-    <li><a data-toggle="tab" href="#home">紅茶系列</a></li>
-    <li><a data-toggle="tab" href="#menu1">冬瓜系列</a></li>
-    <li><a data-toggle="tab" href="#menu2">仙草系列</a></li>
-
     <ul class="nav navbar-nav navbar-right">
 	
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
@@ -31,6 +28,46 @@
         </ul>
       </li>
 
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+	  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+	  
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">客戶訂單<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">顧客管理<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">供應商管理<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+           <li><a href="#">First</a></li>
+           <li><a href="#">Second</a></li>
+           <li><a href="#">Third</a></li>
+        </ul>
+      </li>
+	  
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
