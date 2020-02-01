@@ -35,33 +35,31 @@
 	  
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >庫存</a>
         <ul class="dropdown-menu">
-           <li><a href="#">First</a></li>
-           <li><a href="#">Second</a></li>
-           <li><a href="#">Third</a></li>
+           <li><a href="#">待入庫清單</a></li>
+           <li><a href="#">現有庫存清單</a></li>
+           <li><a href="#">歷史庫存查詢</a></li>
         </ul>
       </li>
 	  
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >客戶訂單</a>
         <ul class="dropdown-menu">
-           <li><a href="#">First</a></li>
-           <li><a href="#">Second</a></li>
-           <li><a href="#">Third</a></li>
+           <li><a href="#">新增訂單</a></li>
+           <li><a href="#">客戶訂單狀態</a></li>
+           <li><a href="#">查詢歷史交易</a></li>
         </ul>
       </li>
 	  
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >顧客管理</a>
         <ul class="dropdown-menu">
-           <li><a href="#">First</a></li>
-           <li><a href="#">Second</a></li>
-           <li><a href="#">Third</a></li>
+           <li><a href="#">新增客戶</a></li>
+           <li><a href="#">客戶資料查詢</a></li>
         </ul>
       </li>
 	  
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >供應商管理</a>
         <ul class="dropdown-menu">
-           <li><a href="#">First</a></li>
-           <li><a href="#">Second</a></li>
-           <li><a href="#">Third</a></li>
+           <li><a href="#">新增供應商</a></li>
+           <li><a href="#">查詢供應商</a></li>
         </ul>
       </li>
 	  
