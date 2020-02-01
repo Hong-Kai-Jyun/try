@@ -16,7 +16,12 @@
   </head>
   <body>
   
-<div class="nav navbar-default col-xs-12"><!-- style="width:30%"navbar-fixed-bottom-->
+<div class="nav navbar-default col-x-6"><!-- style="width:30%"navbar-fixed-bottom-->
+    <div class="col-sm">
+    <li><a data-toggle="tab" href="#menu2">首頁</a></li>
+	</div>
+	
+	<div class="col-sm">
     <tr class="nav navbar-nav navbar-right nav-tabs">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">我的訂單</a>
         <ul class="dropdown-menu">
@@ -25,7 +30,9 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
+	  </div>
 	  
+	  <div class="col-sm">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >庫存</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
@@ -33,7 +40,9 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
+	  </div>
 	  
+	  <div class="col-sm">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >客戶訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
@@ -41,7 +50,9 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
+	  </div>
 	  
+	  <div class="col-sm">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >顧客管理</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
@@ -49,7 +60,9 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
+	  </div>
 	  
+	  <div class="col-sm">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >供應商管理</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
@@ -57,8 +70,7 @@
            <li><a href="#">Third</a></li>
         </ul>
       </li>
-
-	  
+	  </div>
 	  <!--
        <li><a data-toggle="tab" href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
        <li><a data-toggle="tab" href="#">Log out</a></li>
