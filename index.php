@@ -18,13 +18,13 @@
   
 <div class="nav navbar-default col-xs-12"><!-- style="width:30%"navbar-fixed-bottom-->
     <tr class="nav navbar-nav navbar-right nav-tabs">
-      <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單</a>
+      <ul class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的訂單</a>
         <ul class="dropdown-menu">
            <li><a href="#">First</a></li>
            <li><a href="#">Second</a></li>
            <li><a href="#">Third</a></li>
         </ul>
-      </td>
+      </ul>
 	  
       <td class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">庫存</a>
         <ul class="dropdown-menu">
