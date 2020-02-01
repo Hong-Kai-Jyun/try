@@ -12,10 +12,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!--匯入jQuery-->
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><!--匯入bootstrap javascript-->
     
-	<title>Hello, world!</title>
+	<title>My~system</title>
   </head>
   <body>
-  
+<!--menu開始-->  
 <div class="nav navbar-default col-sm-auto"><!-- style="width:30%"navbar-fixed-bottom-->
 
     <div class="col-sm-1"></div><!--空白1-->
@@ -27,9 +27,9 @@
     <tr class="nav navbar-nav navbar-right nav-tabs">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">我的訂單</a>
         <ul class="dropdown-menu">
-           <li><a href="#">First</a></li>
-           <li><a href="#">Second</a></li>
-           <li><a href="#">Third</a></li>
+           <li><a href="#">新增訂單</a></li>
+           <li><a href="#">未結訂單清單</a></li>
+           <li><a href="#">訂單查詢</a></li>
         </ul>
       </li>
 	  
@@ -73,7 +73,7 @@
 	</tr>
     
 </div>
-
+<!--menu結束-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
