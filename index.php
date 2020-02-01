@@ -21,7 +21,6 @@
     <li><a data-toggle="tab" href="#menu2">仙草系列</a></li>
 
 
-  <li><a data-toggle="tab" href=" #<?php echo $row[ 'class_id'];?> ">  <?php echo $row['class_name']; }//foreach結束 ?> </a></li> 
 
 
     <ul class="nav navbar-nav navbar-right">
